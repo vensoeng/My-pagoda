@@ -1,0 +1,330 @@
+header {
+    border-bottom: 1px solid var(--sg-border-00);
+}
+.web-header {
+    position: sticky;
+    background: var(--sg-bglight);
+    top: 0;
+    z-index: 100000;
+}
+.head-body {
+    height: 60px;
+}
+.head-body-check {
+    height: 43px;
+}
+.head-menu-left {
+    margin-left: 1rem;
+}
+.head-menu-left .bar-i {
+    margin-right: 0.2rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: 0rem;
+    font-size: 1.2rem;
+    color: var(--sg-color-text);
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.head-menu-left .bar-i i {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.head-menu-left .bar-i:hover {
+    background: var(--sg-bgblack);
+}
+.head-menu-left .web-icon {
+    width: 40px;
+    height: 40px;
+}
+.head-menu-left .check-icon {
+    width: 33px;
+    height: 33px;
+}
+.web-icon-text h1 {
+    margin-left: 0.5rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--sg-button-blue);
+    font-family: var(--sg-fontKous);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.head-menu-left .check-text {
+    font-size: 1rem;
+}
+.head-menu-center {
+    margin: 0rem 0.5rem;
+}
+.head-menu-center ul li {
+    position: relative;
+    margin: 0rem 0.8rem;
+}
+.head-menu-center ul li a {
+    color: var(--sg-color-text);
+}
+.head-menu-center ul span {
+    font-weight: 550;
+    font-size: 1.05rem;
+    font-family: var(--sg-fontBat);
+}
+.head-menu-right {
+    margin-right: 1rem;
+}
+.head-menu-right-box .btn {
+    cursor: pointer;
+    padding: 0.2rem 1rem;
+    position: relative;
+    background: var(--sg-mainColor-yellow);
+}
+.head-menu-right-box .support {
+    padding: 0rem;
+    background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
+    width: 6.4rem;
+    height: 1.9rem;
+    border-radius: 5px;
+    display: initial;
+}
+.head-menu-right-box .support h2 {
+    font-family: var(--sg-fontBat);
+}
+.head-menu-right-box .btn:focus {
+    background: var(--sg-color-text);
+}
+.head-menu-right-box .btn:focus ul {
+    scale: 1;
+}
+.head-menu-right ul {
+    scale: 0;
+    position: absolute;
+    top: 2.6rem;
+    right: 0.1rem;
+    width: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+    min-width: max-content;
+    min-height: max-content;
+    color: var(--sg-color-text);
+    background: var(--sg-bglight);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) -4px -5px 16px -8px;
+    z-index: 10000;
+}
+.head-menu-right ul:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.head-menu-right ul a {
+    color: var(--sg-color-text);
+}
+.head-menu-right ul li {
+    cursor: pointer;
+    margin: 0.2rem auto;
+}
+.head-menu-right ul li:hover {
+    color: var(--sg-mainColor-yellow);
+}
+.head-menu-right ul li {
+    width: 100%;
+    padding: 0.1rem 0rem;
+}
+.head-menu-right ul li .icon i {
+    color: var(--sg-mainColor-yellow);
+}
+/* ========================================aside===================> */
+.web-sibar {
+    width: 20%;
+    height: 100vh;
+    max-height: 100vh;
+    margin-top: -61px;
+    top: 0;
+    min-width: max-content;
+    position: sticky;
+    background: var(--sg-bglight);
+    transition: all ease-in-out 0.3s;
+}
+/* .web-sibar-body {
+    position: sticky;
+    top: 61px;
+    margin-top: 61px;
+} */
+.web-sibar-active {
+    margin-left: -20%;
+}
+.web-sibar-body > .head {
+    padding: 0.3rem 0rem;
+    margin-top: 61px;
+}
+.web-sibar-body > .head > .box {
+    margin-left: 1.1rem;
+}
+.web-sibar-body > .head .text {
+    line-height: 1.5;
+}
+.web-sibar-body > .head .text h2 {
+    font-size: 1rem;
+}
+.web-sibar-body > .head .text p {
+    font-size: 0.6rem;
+    color: var(--sg-color-spece);
+    font-weight: 500;
+    font-family: var(--sg-fontNotoKH);
+}
+.web-sibar-body ul {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 67.2vh;
+}
+.web-sibar-body ul::-webkit-scrollbar {
+    display: none;
+}
+.web-sibar-body ul li {
+    overflow: hidden;
+    margin: 0.3rem 0rem;
+    margin-left: 0.5rem;
+    position: relative;
+}
+.web-sibar-body ul li > a {
+    color: #0f0f0f;
+    padding: 0.6rem 0rem;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    border-radius: 50rem 0rem 0rem 50rem;
+}
+.web-sibar-body ul li > a:hover {
+    color: var(--sg-mainColor-yellow);
+}
+.web-sibar-body ul > .active > a {
+    background: var(--sg-bgblack);
+    color: var(--sg-mainColor-yellow);
+}
+.web-sibar-body ul > .active {
+    margin-left: 0.4rem;
+    position: sticky;
+    top: -0.4rem;
+    z-index: 10;
+}
+.web-sibar-body ul > .active .box > .icon {
+    background: var(--sg-bglight);
+}
+.web-sibar-body ul > .unactive a:hover {
+    color: var(--sg-color-text);
+    background: none;
+}
+.web-sibar-body ul > .unactive:hover a {
+    margin-left: 0.5rem;
+}
+.web-sibar-body ul li a > .box > .icon {
+    margin-left: 0.6rem;
+    background: blanchedalmond;
+}
+
+.web-sibar-body ul li a > .box > .icon > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: var(--sg-fontMolpali);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.web-sibar-body ul li a > .box .text {
+    margin: 0 0.5rem;
+}
+.web-sibar-body ul li a > .box .text h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.web-sibar-body ul li a > .box .text > .text-mian {
+    font-weight: 650;
+    margin-left: 0.8rem;
+}
+.web-sibar-foot .text {
+    padding: 0rem 0.5rem;
+    padding-top: 0.5rem;
+}
+.web-sibar-foot .text p {
+    font-size: 0.8rem;
+}
+/* ======================web con==============> */
+.web-content-active {
+    width: 100% !important;
+}
+.web-content-active .web-content-body {
+    margin: 0 0.5rem;
+}
+.web-sibar-foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--sg-bglight);
+}
+/* ================@medi aside============> */
+@media only screen and (max-width: 1100px) {
+    .head-menu-left {
+        margin-left: 0.5rem;
+    }
+    .head-menu-right {
+        margin-right: 0.5rem;
+    }
+    .web-sibar {
+        position: fixed;
+        top: 61px;
+        min-width: 250px;
+        z-index: 10000;
+        left: -250px;
+    }
+    .web-sibar-body > .head > .box {
+        margin-left: 0.7rem;
+    }
+    .web-sibar-active {
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+    }
+    .web-sibar-active .web-sibar-body ul > .active {
+        position: initial;
+        margin-left: 0px;
+    }
+    .web-sibar-active .web-sibar-body ul > li {
+        margin-left: 0px;
+    }
+    .web-sibar-active .web-sibar-body ul > li > a {
+        border-radius: 0px;
+    }
+    .web-content {
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .web-icon-text h1 {
+        font-size: 1rem;
+    }
+    .head-menu-right-box .btn h2 {
+        font-size: 0.8rem;
+        line-height: 0;
+    }
+    .head-menu-right-box .btn {
+        padding: 0px;
+        height: 1.8rem;
+        width: 5.5rem;
+    }
+}

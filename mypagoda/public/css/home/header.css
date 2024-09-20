@@ -1,0 +1,290 @@
+body {
+    /* background: var(--sg-bgblack); */
+}
+.web-header {
+    position: sticky;
+    background: var(--sg-bglight);
+    top: 0;
+    overflow: hidden;
+    z-index: 100000;
+}
+.head-body {
+    height: 60px;
+}
+.head-menu-left {
+    margin-left: 1rem;
+}
+.head-menu-left .web-icon {
+    width: 50px;
+    height: 50px;
+}
+.web-icon-text h1 {
+    margin-left: 0.5rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--sg-button-blue);
+    font-family: var(--sg-fontKous);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.head-menu-center {
+    margin: 0rem 0.5rem;
+}
+.head-menu-center ul li {
+    position: relative;
+    margin: 0rem 0.8rem;
+}
+.head-menu-center ul li a {
+    color: var(--sg-color-text);
+}
+.head-menu-center ul span {
+    font-weight: 550;
+    font-size: 1.05rem;
+    font-family: var(--sg-fontBat);
+}
+.head-menu-center ul .active-link a span {
+    color: var(--sg-mainColor-yellow);
+}
+.head-menu-right {
+    margin-right: 1rem;
+}
+.head-menu-right-box .btn {
+    padding: 0.2rem 1rem;
+    background: var(--sg-mainColor-yellow);
+}
+.head-menu-right-box .bar-i {
+    margin-left: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0rem;
+    font-size: 1.2rem;
+    color: var(--sg-color-text);
+    background: none;
+    cursor: pointer;
+}
+.head-menu-right-box .user-check {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0rem;
+    overflow: hidden;
+    background: var(--sg-mainColor-yellow);
+}
+.head-menu-right-box .bar-i:hover {
+    background: var(--sg-bgblack);
+}
+/* ------------------header icon section--------------------------> */
+.web-header .head {
+    position: sticky;
+    top: 0;
+    z-index: 100000000;
+    background: var(--sg-bglight);
+}
+.web-section .head .icon {
+    color: var(--sg-mainColor-yellow);
+    background: var(--sg-color-text);
+}
+.web-section .head .box .text {
+    line-height: 1;
+}
+.web-section .head .box .row-tow {
+    margin-right: 0.3rem;
+}
+.web-section .head .box .row-tow a {
+    font-size: 1rem;
+    font-weight: 550;
+    color: var(--sg-mainColor-yellow);
+    outline-color: var(--sg-mainColor-yellow);
+}
+.web-section .head .box .text h2 {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.web-section .head .box .text p {
+    font-size: 0.6rem;
+    color: var(--sg-color-spece);
+}
+/* this is footer of section --------------------------------> */
+.foot {
+    position: relative;
+    box-shadow: #ffffffe6 0px -20px 20px 0px;
+}
+.foot > .box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--sg-border-00);
+    z-index: 0;
+}
+.foot > .box > .btn {
+    color: var(--sg-mainColor-yellow);
+    outline-color: var(--sg-border-00);
+    font-weight: 550;
+    position: relative;
+    z-index: 2;
+    background: var(--sg-bglight);
+}
+/* =====================this is footer ===========================> */
+.web-foot {
+    color: var(--sg-bglight);
+    background: var(--sg-color-text);
+}
+.web-foot-body {
+    height: 250px;
+}
+.web-foot .web-foot-body > .box .head .text h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: var(--sg-fontKous);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.web-foot-body > .box blockquote p {
+    font-size: 1.1rem;
+}
+.web-foot-body > .box blockquote a {
+    color: var(--sg-bglight);
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin: 0 0.3rem;
+}
+.web-foot-body ul li {
+    border-radius: 10px;
+    margin: 0 0.4rem;
+    color: var(--sg-color-text);
+    background: var(--sg-bglight);
+}
+.web-foot-body ul li i {
+    font-size: 1.2rem;
+}
+/* ================other class================> */
+.text_icon_auto {
+    background: var(--sg-border-00);
+    color: var(--sg-button-blue);
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    width: 2rem;
+    height: 1.5rem;
+    display: inline-flex;
+    line-height: 0;
+}
+/* ============================> */
+@media only screen and (max-width: 1000px) {
+    /* ---------------------header------------> */
+    .head-menu-right {
+        margin-right: 0.5rem;
+    }
+}
+@media only screen and (max-width: 999px) {
+    /* ------------------header--------------------  */
+    .web-header {
+        overflow: initial;
+    }
+    .head-body {
+        position: relative;
+        height: 55px;
+    }
+    .head-menu-left {
+        margin-left: 0.5rem;
+    }
+    .head-menu-left .web-icon {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .web-icon-text h1 {
+        font-size: 1rem;
+    }
+    .head-menu-center ul li a span {
+        font-size: 0.9rem;
+    }
+    .head-menu-right-box .btn {
+        padding: 0.9rem 0.5rem;
+        line-height: 0;
+    }
+    .head-menu-right-box .signs h2 {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 851px) {
+    /* ----------------------header---------------> */
+    .head-menu-center ul li {
+        margin: 0 0.4rem;
+    }
+}
+@media only screen and (max-width: 761px) {
+    .head-menu-center {
+        display: none;
+    }
+    .web-header {
+        transition: all ease-in-out 0.3s;
+    }
+    .head-menu-right-box .user-check {
+        display: none;
+    }
+    .web-header-remove {
+        top: -70px;
+    }
+}
+/* ==============================this is tab bar ================================> */
+.web-tabbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: var(--sg-bglight);
+    bottom: -10px;
+    padding-bottom: 10px;
+    border-top: 1px solid var(--sg-border-00);
+    overflow: hidden;
+    z-index: 100000;
+    display: none;
+}
+.web-tabbar ul {
+    height: 60px;
+}
+
+.web-tabbar a {
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--sg-color-text);
+}
+.web-tabbar a li {
+    width: 100%;
+}
+.web-tabbar a .active i,
+.web-tabbar a .active p {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.web-tabbar li .box {
+    padding: 10px 0px;
+}
+.web-tabbar a .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    color: var(--sg-color-text);
+    background: var(--sg-bglight);
+}
+.web-tabbar li .icon-text {
+    font-size: 0.6rem;
+    font-weight: 550;
+    text-align: center;
+}
+@media only screen and (max-width: 761px) {
+    .web-tabbar {
+        display: block;
+    }
+    body {
+        padding-bottom: 60px;
+    }
+}

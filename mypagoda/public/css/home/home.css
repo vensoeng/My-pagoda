@@ -1,0 +1,1125 @@
+/* this is body > main  */
+.web-main {
+    display: block;
+    margin: 0 auto;
+}
+.con .con-head {
+    margin: 0.5rem auto;
+    position: relative;
+    max-width: 1333px;
+}
+.con .con-head .swiper {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.con .con-head .swiper-slide {
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.con .con-head .swiper-pagination-bullet {
+    width: 0.6rem;
+    height: 0.6rem;
+    opacity: 1;
+    border-radius: 50rem;
+    border: 3px solid var(--sg-bgblack);
+    background: var(--sg-mainColor-yellow);
+}
+.con .con-head .swiper-pagination-bullet-active {
+    width: 2rem;
+}
+.con .con-head .con-head-i {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+.con .con-head .con-head-i button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    background: var(--sg-bgblack-01);
+}
+.con .con-head .con-head-i i {
+    font-size: 1.2rem;
+}
+.con .con-head > .main {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.con-head .swiper-slide img {
+    position: relative;
+    z-index: 1;
+}
+/* this is new for web ========================================================> */
+.web-main > .con {
+    margin: 0 0.5rem;
+}
+.web-section-body {
+    max-width: 1333px;
+}
+/* -------------------------------------------------> */
+#new {
+    padding: 0.1rem 0rem;
+    background: var(--sg-bglight);
+}
+#new .web-section-body {
+    max-width: 1333px;
+}
+.web-header .head {
+    position: sticky;
+    top: 0;
+    z-index: 100000000;
+    background: var(--sg-bglight);
+}
+.web-section .head .icon {
+    color: var(--sg-mainColor-yellow);
+    background: var(--sg-color-text);
+}
+.web-section .head .box .text {
+    line-height: 1;
+}
+.web-section .head .box .row-tow {
+    margin-right: 0.3rem;
+}
+.web-section .head .box .row-tow a {
+    font-size: 1rem;
+    font-weight: 550;
+    color: var(--sg-mainColor-yellow);
+    outline-color: var(--sg-mainColor-yellow);
+}
+.web-section .head .box .text h2 {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.web-section .head .box .text p {
+    font-size: 0.6rem;
+    color: var(--sg-color-spece);
+}
+.new {
+    align-items: initial;
+    overflow: hidden;
+}
+.new .row-one {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    color: var(--sg-bglight);
+    background: var(--sg-mainColor-yellow);
+}
+.new .row-one .box .my-img {
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 270px;
+    max-height: 595px;
+}
+.new .row-one > .box {
+    padding-bottom: 0.5rem;
+}
+.new .row-one > .box .text {
+    padding: 0.5rem;
+}
+.new .row-one > .box .text h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+.new .row-one > .box .text a {
+    font-size: 1rem;
+    font-weight: 550;
+    color: var(--sg-bglight);
+    background: var(--sg-main-gradienColorHover);
+    animation: 3s ease-in-out 0s infinite btn-chat;
+}
+@keyframes btn-chat {
+    from {
+        background: var(--sg-main-gradienColorHover);
+        opacity: 1;
+    }
+    to {
+        background: var(--sg-main-gradientColor);
+        opacity: 0.8;
+    }
+}
+.new .row-tow {
+    width: 70%;
+    margin-left: 0.5rem;
+}
+.new .row-tow ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.4rem;
+}
+.new .row-tow ul li {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.new .row-tow ul li {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px 10px;
+    background: var(--sg-bglight);
+}
+.new .row-tow ul li .text {
+    padding: 0.5rem;
+}
+.new .row-tow ul li .text h2 {
+    font-weight: 550;
+    font-size: 0.99rem;
+    opacity: 0.85;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.new .row-tow ul li:hover .text h2 {
+    opacity: 1;
+    color: var(--sg-mainColor-yellow);
+}
+.new .row-tow ul li > .box > .my-img {
+    height: 120px;
+    display: block;
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
+}
+.new .row-tow ul li:hover .box > .my-img {
+    border-radius: 5px;
+}
+.new .row-tow ul li:hover .box > .my-img img {
+    scale: 1.05;
+}
+.new .row-tow ul li > .box > .my-img > img,
+.new .row-one .box .my-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: all ease-in-out 0.3s;
+}
+.new .row-tow ul li > .box > .my-img > img {
+    object-fit: cover;
+}
+.new .row-tow ul li > .box > .my-img,
+.new .row-one .box .my-img {
+    border-radius: 10px;
+}
+/* =====================this is intro of main ===============================> */
+#intro .web-section-body {
+    max-width: 1333px;
+}
+#intro .intro {
+    position: relative;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: var(--sg-bgblack-01);
+}
+#intro .intro > .box > ul {
+    height: 250px;
+}
+#intro .intro > .box li {
+    text-align: center;
+    margin: 0.5rem;
+}
+#intro .intro > .box li .head .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    background: rgba(206, 18, 18, 0.1);
+}
+#intro .intro > .box li .head .icon i {
+    font-size: 1.5rem;
+}
+#intro .intro > .box li h2 {
+    font-size: 1.1rem;
+    font-family: "Inter", sans-serif;
+}
+#intro .intro > .bg {
+    rotate: 318deg;
+    color: var(--sg-bglight);
+    width: max-content;
+    top: 2rem;
+    left: -2.3rem;
+    padding: 0rem 2rem;
+}
+#intro .intro .con-head-i {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+#intro .intro .con-head-i button {
+    font-size: 1.2rem;
+    background: var(--sg-color-text);
+}
+/* ==============this is leader of website ==============================> */
+/* #leader{
+    background: var(--sg-bgblack);
+  } */
+#leader .web-section-body {
+    max-width: 1333px;
+}
+#leader .leader > .box > ul {
+    overflow: hidden;
+    overflow-x: scroll;
+    align-items: initial;
+    scroll-snap-type: x mandatory;
+}
+#leader .leader > .box > ul a {
+    width: max-content;
+    color: var(--sg-color-text);
+}
+#leader .leader > .box > ul li {
+    min-width: 325px;
+    max-width: 325px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0rem 0.2rem;
+    border: 1px solid var(--sg-border-00);
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--sg-bglight);
+    scroll-snap-align: center;
+}
+#leader .leader > .box > ul li blockquote p {
+    font-size: 1rem;
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.text_icon_auto {
+    background: var(--sg-border-00);
+    color: var(--swiper-theme-color);
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    width: 2rem;
+    height: 1.5rem;
+    display: inline-flex;
+    line-height: 0;
+}
+.text_icon_auto::first-letter {
+    text-transform: uppercase;
+}
+
+.leader > .box > ul li > .head h2 {
+    font-size: 0.9rem;
+    display: none;
+}
+.leader > .box > ul li .user-in .profile {
+    width: 80px;
+    height: 80px;
+    margin: 1rem auto;
+}
+.leader > .box > ul li .user-in > .text {
+    line-height: 1.2;
+    padding-bottom: 1.5rem;
+}
+.leader > .box > ul li .user-in h2 {
+    font-size: 0.9rem;
+}
+.leader > .box > ul li .user-in p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+/* =====================this is media==========================> */
+#media .web-section-body {
+    max-width: 1333px;
+}
+#media .media {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1rem 0rem;
+    background: var(--sg-bgblack);
+}
+#media .media .con-head-i {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+#media .media .con-head-i button {
+    background: var(--sg-color-spece);
+}
+#media .media > .text > h2 {
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
+#media .media > .head {
+    text-align: center;
+}
+#media .media > .box ul {
+}
+#media .media > .box ul li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    border: 0.5px solid var(--sg-border-00);
+    border-radius: 10px;
+    min-width: 193px;
+}
+#media .media > .box ul li .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+    color: var(--sg-bglight);
+    background-image: linear-gradient(23deg, #2b376b, #57b4e1);
+}
+#media .media > .box ul li > .text {
+    margin-left: 0.5rem;
+}
+#media .media > .box ul li > .text h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+#media .bg {
+    rotate: 318deg;
+    color: var(--sg-bglight);
+    width: max-content;
+    top: 2rem;
+    left: -2.3rem;
+    padding: 0rem 2rem;
+    background: var(--sg-main-gradienColorHover);
+}
+/* ==========================this is monk ============================> */
+#monk .web-section-body {
+    max-width: 1333px;
+}
+.monk ul {
+    display: flex;
+    justify-content: left;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.monk ul li {
+    width: 325px;
+    min-width: 325px;
+    margin-right: 0.5rem;
+    overflow-y: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--sg-border-00);
+    margin-bottom: 0.5rem;
+    position: relative;
+    scroll-snap-align: center;
+}
+.monk ul li .user-in .profile-img {
+    margin: 1rem 0rem;
+}
+.monk ul li .user-in .profile-img .profile {
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid var(--sg-mainColor-yellow);
+    outline-offset: 2px;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+    margin-left: 1rem;
+}
+.monk ul li .user-in > .box > .text {
+    margin-left: 0.5rem;
+    line-height: 1.2;
+}
+.monk ul li .user-in .text h2 {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.monk ul li .user-in .text strong {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.monk ul li .user-in blockquote {
+    margin: 0.5rem 1rem;
+    /* text-align: center; */
+}
+.monk ul li .user-in blockquote p {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.monk ul li > .box > .df-c {
+    justify-content: right;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+    background: var(--sg-bglight);
+}
+.monk ul li > .box > .df-c a {
+    border-radius: 5px;
+    font-weight: 550;
+    font-size: 0.9rem;
+    outline: 2px solid var(--sg-border-00);
+    color: var(--sg-mainColor-yellow);
+    color: var(--sg-color-text);
+    background: none;
+}
+.monk ul li > .box > .df-c a:hover {
+    color: var(--sg-mainColor-yellow);
+}
+.foot {
+    position: relative;
+    box-shadow: #ffffffe6 0px -20px 20px 0px;
+}
+.foot > .box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--sg-border-00);
+    z-index: 0;
+}
+.foot > .box > .btn {
+    color: var(--sg-mainColor-yellow);
+    outline-color: var(--sg-border-00);
+    font-weight: 550;
+    position: relative;
+    z-index: 2;
+    background: var(--sg-bglight);
+}
+/* ========================this is  show suggession day ===================> */
+#sug-day .web-section-body {
+    max-width: 1333px;
+}
+.sug-day {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1rem 0rem;
+}
+.sug-day .con-head-i {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+.sug-day .con-head-i button {
+    font-size: 1.2rem;
+    background: var(--sg-color-spece);
+}
+.sug-day > .box {
+    max-height: 250px;
+    padding: 0rem 1rem;
+}
+.sug-day > .box > .row-one .logo .icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.2rem;
+}
+.sug-day > .box > .row-one .logo .icon i {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.sug-day > .box > .row-one ul {
+    min-width: max-content;
+}
+.sug-day > .box > .row-one .logo .text h2 {
+    font-size: 1.5rem;
+    color: var(--sg-mainColor-yellow);
+}
+.sug-day > .box > .row-one li blockquote h2 {
+    font-size: 2rem;
+}
+.sug-day > .box > .row-one .buote {
+    margin-top: 0.8rem;
+}
+.sug-day > .box > .row-one li blockquote h3 {
+    font-size: 1.5rem;
+    opacity: 0.95;
+}
+.sug-day > .box > .row-one .button .btn {
+    width: max-content;
+    font-weight: 550;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    color: var(--sg-color-text);
+    outline-color: var(--sg-color-text);
+}
+.sug-day > .box > .row-tow {
+    margin-left: 20%;
+    height: 400px;
+}
+.sug-day > .box > .row-tow .box {
+    max-height: 100%;
+    height: 100%;
+}
+.sug-day > .box > .row-tow .box img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+.sug-day > .box > .bg {
+    rotate: 318deg;
+    color: var(--sg-bglight);
+    width: max-content;
+    bottom: 2rem;
+    left: auto;
+    right: -2.3rem;
+    padding: 0rem 2.5rem;
+    background: var(--sg-main-gradienColorHover);
+}
+/* =====================================this is festivals section=====================> */
+#fest .web-section-body {
+    max-width: 1333px;
+}
+.fest > .box ul {
+    align-items: initial;
+    scroll-snap-type: x mandatory;
+}
+.fest > .box ul li {
+    width: 325px;
+    min-width: 325px;
+    margin-right: 0.5rem;
+    overflow-y: hidden;
+    border-radius: 3px;
+    border: 1px solid var(--sg-border-00);
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--sg-border-00);
+    scroll-snap-align: center;
+}
+.fest > .box ul li > .head .txt {
+    line-height: 1.2;
+}
+.fest > .box ul li > .head h2 {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.fest > .box ul li > .head p {
+    font-size: 0.8rem;
+}
+.fest > .box ul li > .head p i {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+.fest > .box ul li > .head .profile {
+    width: 2.8rem;
+    height: 2.8rem;
+    background: none;
+}
+.fest > .box ul li > .head .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.fest > .box ul {
+    display: flex;
+    justify-content: left;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.fest > .box ul li {
+    position: relative;
+}
+.fest > .box ul li > .box .list {
+    margin: 0 auto;
+    line-height: 0;
+    /* padding: 0.5rem; */
+    overflow: hidden;
+    max-height: 184px;
+    width: 100%;
+}
+.fest > .box ul li:hover > .box .list img {
+    scale: 1.05;
+    cursor: pointer;
+}
+.fest > .box ul li > .box .list img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+}
+.fest > .box ul li > .box .list .img-child {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    max-height: 184px;
+    width: 100%;
+    max-width: 100%;
+}
+.fest > .box ul li > .box .bg {
+    left: auto;
+    right: 0px;
+    z-index: 21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sg-bglight);
+    background: #00000050;
+    bottom: 0rem;
+    max-width: 100.63px;
+    border-radius: 3px 0px 0px 0px;
+}
+.fest > .box ul li blockquote p {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+/* =====================this is show about short video header ===================> */
+#short-v .web-section-body {
+    max-width: 1333px;
+}
+.short-v ul {
+    display: flex;
+    justify-content: left;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.short-v ul li {
+    width: 215px;
+    min-width: 215px;
+    margin-right: 0.2rem;
+    position: relative;
+    overflow-y: hidden;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid var(--sg-border-00);
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--sg-border-00);
+    scroll-snap-align: center;
+}
+.short-v ul li > .head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+}
+.short-v ul li > .head .profile {
+    margin-left: 0.1rem;
+    scale: 0.75;
+    width: 2.8rem;
+    height: 2.8rem;
+    background: linear-gradient(
+        36deg,
+        rgb(255, 201, 0) 13%,
+        rgb(255, 0, 95) 73%,
+        rgb(255, 9, 237) 100%
+    );
+}
+.short-v ul li > .head .profile .icon {
+    margin: 0 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+    border: 2px solid var(--sg-bglight);
+}
+.short-v ul li > .head > .btn {
+    padding: 0rem;
+    width: 2rem;
+    border-radius: 3px;
+    height: 1.5rem;
+    background: var(--sg-main-gradienColorHover);
+}
+.short-v ul li > .head > .btn p {
+    font-size: 0.7rem;
+    font-family: "Inter", sans-serif;
+}
+.short-v ul li .tum-v img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.short-v ul li > .subtitle {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+.short-v ul li > .subtitle > .btn {
+    position: absolute;
+    padding: 0rem;
+    width: 2.8rem;
+    height: 1.8rem;
+    background: var(--sg-mainColor-yellow);
+    right: 0rem;
+}
+.short-v ul li > .subtitle {
+    background: linear-gradient(0deg, black, transparent);
+}
+.short-v ul li > .subtitle > .text {
+    margin-left: 0.5rem;
+}
+.short-v ul li > .subtitle > .text h2 {
+    color: var(--sg-bglight);
+    font-size: 0.8rem;
+}
+.short-v ul li > .subtitle > .btn p {
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: var(--sg-color-text);
+    font-family: var(--sg-fontNotoKH);
+}
+.short-v ul li > .bg {
+    color: var(--sg-bglight);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background: rgb(0 0 0 / 35%);
+    opacity: 0;
+}
+.short-v ul li > .bg .icon {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    opacity: 0.9;
+    z-index: 3;
+}
+.short-v ul li:hover > .bg {
+    opacity: 1;
+}
+/* ==================================this is theory section=====================> */
+#theory .web-section-body {
+    max-width: 1333px;
+}
+.theory {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1rem 0rem;
+    background: var(--sg-bgblack);
+}
+.theory > .con-head-i {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+.theory > .con-head-i button {
+    font-size: 1.2rem;
+    background: var(--sg-color-spece);
+}
+.theory > .bg {
+    rotate: 318deg;
+    color: var(--sg-bglight);
+    width: max-content;
+    top: 2rem;
+    left: -2.3rem;
+    padding: 0rem 2rem;
+}
+.theory > .box {
+    text-align: center;
+    max-width: 500px;
+}
+.theory > .box > .head .profile {
+    width: 80px;
+    height: 80px;
+    margin: 0.5rem auto;
+}
+.theory > .box > blockquote p {
+    font-size: 1rem;
+    font-weight: 550;
+}
+.theory > .box .text > .icon {
+    width: 2rem;
+    height: 2rem;
+}
+.theory > .box .text > .icon i {
+    font-size: 1.5rem;
+}
+.theory > .box .text > h2 {
+    font-size: 14px;
+    color: #333;
+}
+.theory > .box .text > p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}
+@media only screen and (max-width: 1000px) {
+    /* ---------------------header------------> */
+    .head-menu-right {
+        margin-right: 0.5rem;
+    }
+    /* ------------this is main-------------> */
+    .new {
+        display: flex;
+        flex-flow: column;
+    }
+    .new .row-one {
+        order: 2;
+        width: initial;
+    }
+    .new .row-tow {
+        width: initial;
+    }
+}
+@media only screen and (max-width: 999px) {
+    /* ------------------header--------------------  */
+    .web-header {
+        overflow: initial;
+    }
+    .head-body {
+        position: relative;
+        height: 55px;
+    }
+    .head-menu-left .web-icon {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .web-icon-text h1 {
+        font-size: 1rem;
+    }
+    .head-menu-center ul li a span {
+        font-size: 0.9rem;
+    }
+    .head-menu-right-box .btn {
+        padding: 0.9rem 0.5rem;
+        line-height: 0;
+    }
+    .head-menu-right-box .signs h2 {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 922px) {
+    .sug-day > .box {
+        max-height: 160px;
+        justify-content: space-between !important;
+    }
+    .sug-day > .box > .row-one li blockquote h2 {
+        font-size: 1.2rem;
+    }
+    .sug-day > .box > .row-one li blockquote h3 {
+        font-size: 1rem;
+    }
+    .sug-day > .box > .row-one .button .btn {
+        font-size: 0.9rem;
+        padding: 0.1rem 0.5rem;
+    }
+    .sug-day > .box > .row-tow {
+        margin-left: 0;
+    }
+    .sug-day > .box > .row-tow .box img {
+        scale: 0.8;
+    }
+}
+@media only screen and (max-width: 851px) {
+    /* ----------------------header---------------> */
+    .head-menu-center ul li {
+        margin: 0 0.4rem;
+    }
+}
+@media only screen and (max-width: 761px) {
+    .head-menu-center {
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .new .row-tow ul li .text h2 {
+        -webkit-line-clamp: 2;
+    }
+}
+@media only screen and (max-width: 550px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    .web-section .head .icon {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .web-section .head .box .text h2 {
+        font-size: 0.9rem;
+    }
+    .web-section .head .box .row-tow a {
+        padding: 0.8rem 0.5rem;
+        padding-top: 0.9rem;
+        font-size: 0.8rem;
+        line-height: 0;
+    }
+    #media .media > .head > h2 {
+        font-size: 1rem;
+    }
+    #media .media > .head > p {
+        font-size: 0.8rem;
+    }
+    #media .media > .box ul li > .text h2 {
+        font-size: 0.8rem;
+    }
+    #media .media > .box ul li {
+        min-width: max-content;
+    }
+    #media .media > .box ul li .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #intro .intro .con-head-i button,
+    #media .media .con-head-i button,
+    .sug-day .con-head-i button,
+    .theory > .con-head-i button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    #intro .intro > .box li .head .icon {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    #intro .intro > .box li .head .icon i {
+        font-size: 1.1rem;
+    }
+    #intro .intro > .box li h2 {
+        font-size: 0.9rem;
+    }
+    #intro .intro > .box li p {
+        font-size: 0.7rem;
+    }
+    #intro .intro > .bg,
+    #media .bg,
+    .theory > .bg,
+    .sug-day > .box > .bg {
+        padding: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 11rem;
+        height: 1.5rem;
+        line-height: 1;
+    }
+    #intro .intro > .bg p,
+    #media .bg p,
+    .theory > .bg p,
+    .sug-day > .box > .bg p {
+        font-size: 0.7rem;
+        line-height: 0;
+    }
+    .foot > .box > .btn {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 515px) {
+    .con .con-head .swiper-slide {
+        height: 210px;
+    }
+    .con .con-head .swiper {
+        overflow: initial;
+    }
+    .con .con-head .swiper-pagination-bullet {
+        margin: -2.3rem auto !important;
+    }
+    /* -------------main new-----------------> */
+    .new .row-tow > .box {
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .new .row-tow > .box ul {
+        min-width: 1000px;
+    }
+    /* -------------------------------------> */
+    .sug-day > .box > .row-one .logo .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    .sug-day > .box > .row-one .logo .text h2 {
+        font-size: 1rem;
+    }
+    .new .row-tow ul li .text h2 {
+        font-size: 0.9rem;
+    }
+    .sug-day > .box > .row-one {
+        position: relative;
+        z-index: 1;
+    }
+    .sug-day > .box > .row-tow {
+        position: absolute;
+        z-index: 0;
+        right: -30%;
+        opacity: 0.3;
+    }
+    .leader > .box > ul li .user-in .profile {
+        width: 4rem;
+        height: 4rem;
+    }
+    #leader .leader > .box > ul li blockquote p {
+        font-size: 0.9rem;
+    }
+    .leader > .box > ul li .user-in h2 {
+        font-size: 0.9rem;
+    }
+    .leader > .box > ul li .user-in p {
+        font-size: 0.8rem;
+    }
+    .monk ul li .user-in .profile-img .profile {
+        width: 2rem;
+        height: 2rem;
+    }
+    .monk ul li .user-in .text h2 {
+        font-size: 0.9rem;
+    }
+    .monk ul li .user-in blockquote p {
+        font-size: 0.9rem;
+    }
+    .monk ul li > .box > .df-c {
+        justify-content: left;
+        margin-left: 1rem;
+    }
+    .monk ul li > .box > .df-c a {
+        font-size: 0.8rem;
+    }
+    .fest > .box ul li > .head h2 {
+        font-size: 0.9rem;
+    }
+    .fest > .box ul li > .head p {
+        font-size: 0.7rem;
+    }
+    .fest > .box ul li blockquote p {
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 488px) {
+    .theory > .box > blockquote p {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}

@@ -1,0 +1,82 @@
+#art-books .web-section-body {
+    background: none;
+}
+.web-section-body ul {
+    margin: 0.5rem auto;
+}
+.web-section-body ul li {
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0.5rem auto;
+    position: relative;
+    max-height: 250px;
+}
+.web-section-body ul li .list_foot {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.web-section-body ul li .list_foot .row-tow {
+    height: 50px;
+    margin-right: 0.5rem;
+}
+.web-section-body ul li .list_foot button {
+    position: relative;
+}
+.web-section-body ul li .list_foot button a {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    background: var(--sg-bglight);
+}
+.web-section-body ul li .list_foot button a i {
+    opacity: 0.6;
+}
+.web-section-body ul li .list_foot button:hover a i {
+    opacity: 1;
+}
+.web-section-body ul li .list_foot button::before {
+    position: absolute;
+    content: "";
+    border-radius: 50rem;
+    width: 20rem;
+    height: 20rem;
+    background: var(--sg-mainColor-yellow);
+    z-index: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all ease-in 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+        rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+        rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.web-section-body ul li .list_foot button:hover::before {
+    transform: translate(-50%, -50%) scale(5);
+}
+.icon_add {
+    position: fixed;
+    top: 73px;
+    right: 0.8rem;
+    z-index: 10000;
+}
+.icon_add button {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icon_add button i {
+    color: var(--sg-mainColor-yellow);
+}
+@media only screen and (max-width: 1000px) {
+    .web-section-body {
+        overflow: initial;
+        max-width: 100%;
+        max-height: max-content;
+    }
+}

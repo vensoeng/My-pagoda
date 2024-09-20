@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moulpali&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: "Battambang", system-ui;
+}
+:root {
+    --sg-bglight: #fff;
+    --sg-bgblack: #f0f2f5;
+    --sg-bgblack-01: rgba(0, 0, 0, 0.05);
+    --sgbgBlack-hover: #e4e6eb;
+    --sg-mainColor-yellow: #ee7a2c;
+    --sg-mainColor-Bluedark: #005ea9;
+    --sg-maincolor-orangdark: #e31305;
+    --sg-maincolor-greendark: #319b31;
+    --sg-maincolor-bluedark: #005ea9;
+    --sg-mainbgcolot-bluedarkhover: #e4e6eb;
+    --sg-maincolor-bluelight: #5b9eee;
+    --sg-maincolor-light: #fff;
+    --sg-color-light-spec: #f0f2f5;
+    --sg-main-gradientColor: linear-gradient(147deg, #ffe53b 0%, #d3145b 74%);
+    --sg-main-gradienColorHover: linear-gradient(
+        45deg,
+        #fbda61 0%,
+        #ff5acd 100%
+    );
+    --sg-main-yellowlight: #ffe53b;
+    --sg-button-blue: #1876f2;
+    --sg-button-blueHover: #1876f2c7;
+    --sg-border-input: #e0e3e8;
+    --sg-border-00: #e0e9fb;
+    --sg-border-mainApp: #dedfe1;
+    --sg-iconboxShadow: 0px 1px 1px 1px rgb(151 151 151 / 10%);
+    --sg-color-def: rgb(0, 0, 0);
+    --sg-color-text: rgba(0, 0, 0, 0.829);
+    --sg-color-spece: #918a8a;
+    --sg-fontBat: "Battambang", system-ui;
+    --sg-fontKous: "Koh Santepheap", serif;
+    --sg-fontMolpali: "Moulpali", sans-serif;
+    --sg-fontNotoKH: "Nokora", sans-serif;
+}
+
+.in-ra-sm,
+.in-btn {
+    width: 100%;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    text-indent: 0.8rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    outline: 1px solid var(--sg-border-input);
+    transition: all ease-in-out 0.4s;
+    background: none;
+}
+.in-btn {
+    height: 40px;
+    text-indent: 0px;
+    cursor: pointer;
+    font-weight: 550;
+    border-radius: 5px;
+    outline: none;
+    color: var(--sg-bglight);
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.in-ra-sm-c {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem;
+}
+.dn {
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    display: block;
+    margin: 0 auto;
+    background: var(--sg-mainColor-yellow);
+}
+.body-mian {
+    display: flex;
+    justify-content: left;
+    margin: 0 auto;
+    align-items: start;
+    max-width: 1349px;
+}
+/* ===========================this is login form ===========================>  */
+.we-sign {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: var(--sg-bglight);
+    border: 1px solid var(--sg-border-00);
+    z-index: 100;
+}
+.we-main-sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    /* background-image: url(../iamge/usernatur.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+.we-main-sign .we-sign {
+    position: initial;
+    transform: translate(0%, 0%);
+}
+/* .sign-true{
+    border: none;
+} */
+.we-sign-body {
+    display: block;
+    margin: 2.5rem 0rem;
+}
+.sign-true .we-sign-body {
+    margin: 1.5rem 0rem;
+}
+.we-sign-head .profile-sm i {
+    font-size: 5rem;
+    padding-top: 1.5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.we-sign-head .form-profile-infor {
+    margin-top: 0.8rem;
+}
+.we-sign-item {
+    max-width: 100%;
+    position: relative;
+    margin: 2rem 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 2px solid #ee7a2c40;
+    transition: all ease-in-out 0.3s;
+}
+.we-sign-body .error {
+    border-color: var(--sg-maincolor-orangdark);
+}
+.we-sign-item:focus-within,
+.blog-con .we-sign-item:last-child:focus-within {
+    border: 2px solid var(--sg-mainColor-yellow);
+}
+.item-in-check:focus-within {
+    border: none;
+}
+.we-sign-item:last-child {
+    border: none;
+    margin-top: 2.5rem;
+}
+.blog-con .we-sign-item {
+    margin: 0rem 1rem !important;
+}
+.sign-true .we-sign-item {
+    margin: 1.5rem 1rem;
+}
+.sign-true .we-sign-item:last-child {
+    margin-top: 1.8rem;
+}
+.blog-con .we-sign-item:last-child {
+    border: 2px solid #ee7a2c40 !important;
+}
+.keylife {
+    position: relative;
+    margin: 0.5rem 0rem;
+    margin-top: 1rem;
+}
+.keylife .icon-ra {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    z-index: 3;
+    cursor: pointer;
+    outline: 2px solid var(--sg-mainColor-yellow);
+    background: var(--sg-bglight);
+}
+.keylife::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--sg-mainColor-yellow);
+    z-index: 0;
+}
+.item-in-check {
+    margin: 0rem 1rem !important;
+    margin-top: -0.5rem !important;
+    border: none;
+    font-size: 0.9rem;
+}
+.we-sign-item:focus-within label,
+.value-true label {
+    top: -16px;
+    background: var(--sg-bglight);
+    transition: all ease-in-out 0.3s;
+}
+.value-true label {
+    top: -16px !important;
+    transition: all ease-in-out 0.3s;
+    background: var(--sg-bglight);
+}
+.we-sign-item label {
+    position: absolute;
+    left: 2.5rem;
+    height: max-content;
+    top: 10px;
+    font-size: 0.8rem;
+    color: var(--sg-color-spece);
+    transition: all ease-in-out 0.3s;
+    z-index: 0;
+    padding: 0rem 0.5rem;
+    background: var(--sg-bglight);
+}
+
+.we-sign-item .icon-ra i {
+    font-size: 1rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0rem 0.6rem;
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.icon-sign {
+    position: absolute;
+    right: -0.2px;
+    height: 100%;
+    background: var(--sg-bglight);
+    z-index: 10;
+    width: 2.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.icon-sign i {
+    opacity: 0.55;
+    font-size: 1rem;
+}
+.we-sign-item .we-in {
+    width: 100%;
+}
+body .we-sign-item .we-in input {
+    outline: none;
+    position: relative;
+    z-index: 5;
+}
+.form-footer {
+    margin-top: 0.8rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.form-footer a {
+    color: var(--sg-button-blue);
+    margin: 0rem 0.2rem;
+}
+/* ==========================this is teacher====================> in section 1 */
+.validation {
+    width: 30%;
+    max-width: 380px;
+    display: block;
+    background: var(--sg-bglight);
+    border-right: 1px solid var(--sg-border-00);
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.web-sider-meni-con-list-item > .icon-ra {
+    width: 1.1rem;
+    height: 1.1rem;
+    outline: 2px solid var(--sg-maincolor-greendark);
+    outline-offset: -1px;
+    content: "done_all";
+    margin: 0.5rem 0.8rem;
+    overflow: initial;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+}
+.checkedItem {
+    background: var(--sg-maincolor-greendark) !important;
+}
+.checkedItem > i::before {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    font-size: 1rem !important;
+    z-index: 200 !important;
+    color: var(--sg-bglight) !important;
+    content: "check" !important;
+    transition: all ease-in-out 0.3s;
+}
+.other-link-of-privatcy-web {
+    position: absolute;
+    bottom: 0;
+    margin: 0.1rem;
+}
+.web-sider-meni-con-list-item > span {
+    font-weight: 550;
+}
+.we-sign p.sms {
+    font-size: 0.8rem;
+    margin: auto 1.2rem;
+    color: var(--sg-maincolor-orangdark);
+}
+/* =======================this is  section 2 ==================================> */
+.form {
+    width: 70%;
+    max-width: 700px;
+    display: block;
+    margin: 1rem;
+}
+.form-profile-infor {
+    line-height: 1.5;
+    margin-top: 0.3rem;
+}
+.form-profile-infor h2 {
+    font-size: 1.2rem;
+}
+.form-profile-infor p {
+    font-size: 0.8rem;
+    color: var(--sg-color-spece);
+}
+.form-head {
+    display: block;
+    text-indent: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 0rem;
+}
+.form-head h2 {
+    font-size: 1.05rem;
+}
+
+.form-profile {
+    margin: 0.5rem auto;
+    text-align: center;
+}
+.form-profile .profile-sm {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+.form ul {
+    display: block;
+    margin: 0 0.5rem;
+}
+.form ul li {
+    margin: 0.5rem 0rem;
+}
+.con-adduser {
+    margin: 0 0.5rem;
+}
+.con-adduser button {
+    padding: 0.2rem 1rem;
+    font-weight: 550;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+.con-adduser {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.con-adduser button:first-child {
+    background: none;
+    color: var(--sg-button-blue);
+    outline: 2px solid var(--sg-button-blue) !important;
+    outline-offset: -1px;
+}
+.con-adduser button:first-child:hover {
+    color: var(--sg-maincolor-light);
+    background: var(--sg-button-blue);
+}
+.con-adduser button:active {
+    opacity: 0.8;
+}

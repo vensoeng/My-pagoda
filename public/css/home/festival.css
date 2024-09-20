@@ -1,0 +1,127 @@
+main > .con > .con-box {
+    margin: 0 0.5rem;
+}
+#fest .web-section-body {
+    max-width: 1333px;
+    padding: 1rem 0rem;
+}
+.fest > .box ul {
+    align-items: initial;
+}
+.fest > .box ul li {
+    width: 100%;
+    overflow-y: hidden;
+    border-radius: 3px;
+    position: relative;
+    border: 1px solid var(--sg-border-00);
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--sg-border-00);
+}
+.fest > .box ul li > .head .txt {
+    line-height: 1.2;
+}
+.fest > .box ul li > .head h2 {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.fest > .box ul li > .head p {
+    font-size: 0.8rem;
+}
+.fest > .box ul li > .head p i {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+.fest > .box ul li > .head .profile {
+    width: 2.8rem;
+    height: 2.8rem;
+    background: none;
+}
+.fest > .box ul li > .head .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.fest > .box ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0.8rem;
+}
+/* .fest > .box ul li > .box {
+    position: relative;
+} */
+.fest > .box ul li > .box .list {
+    margin: 0 auto;
+    line-height: 0;
+    /* padding: 0.5rem; */
+    overflow: hidden;
+    max-height: 184px;
+}
+.fest > .box ul li:hover > .box .list img {
+    scale: 1.05;
+    cursor: pointer;
+}
+.fest > .box ul li > .box .list img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+}
+.fest > .box ul li > .box .list .img-child {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    max-height: 184px;
+    width: 100%;
+    max-width: 100%;
+}
+.fest > .box ul li > .box .bg {
+    left: auto;
+    right: 0px;
+    z-index: 21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sg-bglight);
+    background: #00000050;
+    bottom: 0rem;
+    max-width: 100.63px;
+    border-radius: 3px 0px 0px 0px;
+}
+.fest > .box ul li blockquote p {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+@media only screen and (max-width: 996px) {
+    .fest > .box ul li > .head h2 {
+        font-size: 0.9rem;
+    }
+    .fest > .box ul li > .head p {
+        font-size: 0.7rem;
+    }
+    .fest > .box ul li blockquote p {
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 668px) {
+    .fest > .box ul {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+@media only screen and (max-width: 550px) {
+    .fest > .box ul li > .head .profile {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    .fest > .box ul li > .head {
+        margin: 0.5rem auto;
+    }
+    .fest > .box ul li {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+}

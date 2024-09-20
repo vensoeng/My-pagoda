@@ -1,0 +1,36 @@
+body {
+  background: var(--sg-bgblack);
+}
+/* ==================main=========================> */
+.noresult {
+  height: 90vh;
+  text-align: center;
+  position: relative;
+}
+.noresult .text h2 {
+  color: var(--sg-color-spece);
+}
+.noresult .box > ul {
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%);
+}
+.noresult .box > ul li {
+  display: inline-flex;
+  align-items: center;
+}
+.noresult .box > ul li a {
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  color: var(--sg-color-spece);
+  background: var(--sg-bgblack);
+  transition: all ease-in 0.3s;
+}
+.noresult .box > ul li:hover a {
+  margin-top: -0.5rem;
+  text-decoration: underline;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: var(--sg-color-text);
+  background: var(--sg-bglight);
+}

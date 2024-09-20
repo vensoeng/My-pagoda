@@ -1,0 +1,77 @@
+/* ============================all book==================> */
+main > .con {
+  margin: 1rem 0rem;
+}
+.web-section-body {
+  max-width: 1333px;
+}
+.new-books > .box {
+  padding-bottom: 1rem;
+}
+.new-books > .box > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.4rem;
+}
+/* ==============================addartical=====================> */
+.art-books > .box > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5rem 0.4rem;
+}
+/* ========================allartical========================> */
+@media only screen and (max-width: 670px) {
+  .art-books > .box > ul {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .art-books > .box > ul > li > .box .head .row {
+    display: none;
+  }
+}
+@media only screen and (max-width: 538px) {
+  .art-books > .box > ul {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+@media only screen and (max-width: 522px) {
+  .art-books > .box {
+    overflow: initial;
+  }
+  .art-books > .box ul {
+    min-width: initial;
+  }
+  .art-books > .box > ul > li > .box .head {
+    min-height: 150px;
+    max-height: inherit;
+  }
+}
+/* ======================allbook================> */
+@media only screen and (max-width: 778px) {
+  .new-books > .box > ul {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media only screen and (max-width: 422px) {
+  .new-books > .box > ul {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.3rem;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .new-books > .box {
+    overflow: initial;
+  }
+  .new-books > .box > ul {
+    min-width: initial;
+  }
+  .new-books > .box > ul > li blockquote {
+    display: none;
+  }
+  .new-books > .box > ul > li > .box > .head {
+    height: 200px;
+  }
+  .new-books > .box > ul > li > .box > .head img {
+    height: 100%;
+    object-fit: cover;
+  }
+}

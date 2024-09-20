@@ -1,0 +1,54 @@
+main > .con {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+main > .con > .con-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90vh;
+    margin: 0 0.5rem;
+}
+main .user {
+    max-width: 400px;
+    margin: 0 auto;
+}
+main .user-infor {
+    text-align: center;
+}
+main .user-infor .icon {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+}
+main .user-infor .text {
+    line-height: 1.5;
+}
+main .user-infor .text h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+main .user-infor .text p {
+    color: var(--sg-color-spece);
+}
+main .user ul {
+    margin: 1rem auto;
+}
+main .user ul li {
+    text-align: center;
+    margin: 0 0.5rem;
+    font-weight: 550;
+}
+main .user ul li h2 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--sg-mainColor-yellow);
+}
+main .user ul li h2 p {
+    font-size: 1rem;
+}
+main .user blockquote p {
+    text-align: center;
+    font-size: 1rem;
+}

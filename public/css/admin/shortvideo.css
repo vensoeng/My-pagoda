@@ -1,0 +1,24 @@
+#art-books table td .btn-delete {
+  flex: 1;
+  max-width: 84px;
+  max-height: 35px;
+}
+#art-books table tr td:first-child .img img {
+  height: auto;
+  min-height: 70px;
+}
+.short-video {
+  position: sticky;
+  top: 60px;
+}
+#art-books .web-section-body > .box {
+  width: 100%;
+  overflow: scroll;
+  max-height: 80vh;
+}
+#art-books table {
+  min-width: max-content;
+}
+#art-books table tr:first-child {
+  top: 0;
+}

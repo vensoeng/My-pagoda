@@ -1,0 +1,61 @@
+/* =========header ===================================> */
+.head-menu-center ul li:first-child span {
+    color: var(--sg-color-text);
+}
+/* =======================main======================> */
+.web-section-body > .head {
+    position: sticky;
+    top: 60px;
+    z-index: 100;
+    padding: 0.5rem 0rem;
+    background: var(--sg-bglight);
+}
+.web-section .head .box .row-tow a {
+    padding: 0.1rem 0.5rem;
+}
+.web-section .head .box .row-tow a input {
+    overflow: hidden;
+    width: 0px;
+    outline: none;
+    font-size: 1rem;
+    font-family: var(--sg-fontNotoKH);
+}
+.web-section .head .box .row-tow a input:focus {
+    width: max-content;
+}
+.web-section .head .box .row-tow a label {
+    cursor: pointer;
+}
+/* ------------------------------------this is section--------------------------> */
+@media only screen and (max-width: 999px) {
+    .web-section-body > .head {
+        top: 50px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .web-section .head .box .row-tow {
+        display: none;
+    }
+    .short-v ul li > .subtitle > .btn {
+        width: 2rem;
+        height: 1.5rem;
+    }
+    .short-v ul li > .subtitle > .btn p {
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .short-v ul li > .head .profile {
+        display: none;
+    }
+    .short-v ul li > .head {
+        justify-content: right;
+    }
+    .short-v ul li > .head > .btn {
+        width: 1.8rem;
+        height: 1.3rem;
+    }
+    .short-v ul li > .head > .btn p {
+        font-size: 0.6rem;
+    }
+}

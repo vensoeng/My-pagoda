@@ -1,0 +1,770 @@
+/* header=====================================> */
+
+/* main======================================> */
+main {
+    margin: 0 0.5rem;
+}
+main > .con {
+    display: flex;
+    align-items: initial;
+    margin: 0 auto;
+    max-width: 1333px;
+    width: 100%;
+}
+main > .con > .con-box {
+    width: 100%;
+    margin: 0 auto;
+}
+/* .web-section-body {
+    max-width: 1333px;
+} */
+.web-section-body > .head {
+    position: sticky;
+    top: 60px;
+    z-index: 100;
+    padding: 0.5rem 0rem;
+    background: var(--sg-bglight);
+}
+.web-section .head .box .row-tow a {
+    padding: 0.1rem 0.5rem;
+}
+.web-section .head .box .row-tow a input {
+    overflow: hidden;
+    width: 0px;
+    outline: none;
+    font-size: 1rem;
+    font-family: var(--sg-fontNotoKH);
+}
+.web-section .head .box .row-tow a input:focus {
+    width: max-content;
+}
+.web-section .head .box .row-tow a label {
+    cursor: pointer;
+}
+.foot {
+    box-shadow: none;
+    margin: 1rem auto;
+}
+.foot > .box::before {
+    height: 1px;
+}
+.foot > .box > .btn {
+    outline: 1px solid var(--sg-border-00);
+}
+/* =====================this is monk section==================> */
+.monk > .box > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.8rem 1rem;
+}
+.monk > .box > ul li {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.monk > .box > ul li > .box > .head {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--sg-mainColor-yellow);
+}
+.monk > .box > ul li > .box > .head .row {
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 40px;
+}
+.monk > .box > ul li > .box > .head .row .icon {
+    width: 1.9rem;
+    height: 1.9rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: var(--sg-bglight);
+    background: none;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+.monk > .box > ul li:hover > .box > .head .row .icon {
+    opacity: 1;
+}
+.monk > .box > ul li:hover > .box > .head .row .icon:hover {
+    background: rgb(0 0 0 / 11%);
+}
+.monk > .box > ul li .user-in {
+    padding: 0.5rem 0rem;
+}
+.monk > .box > ul li .user-in .profile {
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 3px solid var(--sg-bgblack-01);
+    margin-left: 0rem;
+}
+.monk > .box > ul li .user-in .text h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--sg-color-spece);
+}
+/* ==================================this is theory section=====================> */
+#theory .web-section-body {
+    max-width: 1333px;
+}
+.theory {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1rem 0rem;
+    background: var(--sg-bgblack);
+}
+.theory > .con-head-i {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+.theory > .con-head-i button {
+    font-size: 1.2rem;
+    background: var(--sg-color-spece);
+}
+.theory > .bg {
+    rotate: 318deg;
+    color: var(--sg-bglight);
+    width: max-content;
+    top: 2rem;
+    left: -2.3rem;
+    padding: 0rem 2rem;
+}
+.theory > .box {
+    text-align: center;
+    max-width: 500px;
+}
+.theory > .box > .head .profile {
+    width: 80px;
+    height: 80px;
+    margin: 0.5rem auto;
+}
+.theory > .box > blockquote p {
+    font-size: 1rem;
+    font-weight: 550;
+}
+.theory > .box .text > .icon {
+    width: 2rem;
+    height: 2rem;
+}
+.theory > .box .text > .icon i {
+    font-size: 1.5rem;
+}
+.theory > .box .text > h2 {
+    font-size: 14px;
+    color: #333;
+}
+.theory > .box .text > p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}
+/* ==============================this is monk infor===============> */
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.monk-infor {
+    max-width: 500px;
+    height: max-content;
+    position: sticky;
+    top: 70px;
+    overflow: hidden;
+    transition: all ease-in-out 0.4s;
+    width: 0rem;
+    border-radius: 10px;
+    opacity: 0;
+}
+.monk-infor-body {
+    max-height: 88vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.monk-infor-active {
+    width: auto;
+    margin-right: 0rem;
+    margin-left: 0.5rem;
+    opacity: 1;
+}
+.monk-infor-body .monk-head {
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--sg-border-00);
+}
+.monk-infor-body .monk-head .btn-close {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+.monk-infor-body .monk-head .btn-close .icon {
+    background: rgb(0 0 0 / 38%);
+}
+.monk-infor-body .user-cover {
+    display: block;
+    margin: 0 auto;
+}
+.monk-infor-body .user-cover .box {
+    overflow: hidden;
+}
+.monk-infor-body .user-profile {
+    width: 7.5rem;
+    height: 7.5rem;
+    overflow: hidden;
+    border-radius: 50rem;
+    margin-top: -5rem;
+    margin-left: 0.8rem;
+    box-sizing: border-box;
+    border: 4px solid var(--sg-bglight);
+    position: relative;
+    z-index: 5;
+}
+.monk-infor-body .monk-head .text h2 {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.monk-infor-body .monk-head .text > p {
+    font-size: 0.8rem;
+    color: var(--sg-color-spece);
+}
+.monk-infor-body .monk-head .text blockquote p {
+    font-size: 1rem;
+}
+.infor-section {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--sg-border-00);
+}
+.infor-section .head {
+    margin: 0 0.5rem;
+}
+.infor-section-border {
+    border: none;
+}
+.infor-section-border .head {
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    border-color: var(--sg-border-00);
+}
+.infor-section-border .head ul {
+    width: initial;
+    margin: 0 0.5rem;
+}
+.infor-section .head > ul {
+    width: 100%;
+    height: 50px;
+}
+.infor-section .head h2 {
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+.infor-section .head .btn-add-photo {
+    width: 5rem;
+    height: 2rem;
+    border: 1px solid var(--sg-border-00);
+    background: none;
+    padding: 0rem;
+    border-radius: 50rem;
+    cursor: pointer;
+    background: var(--sg-bglight);
+}
+.infor-section .head .btn-add-photo i {
+    color: #7ddd7d;
+}
+.infor-section .head .btn-add-photo h2 {
+    margin-left: 0.3rem;
+}
+.infor-section .head .btn-out {
+    padding: 0.8rem 0.5rem;
+    padding-top: 0.9rem;
+    font-size: 0.8rem;
+    line-height: 0;
+    font-weight: 550;
+    color: var(--sg-mainColor-yellow);
+    outline-color: var(--sg-mainColor-yellow);
+}
+.infor-section .head p {
+    font-size: 0.6rem;
+    color: var(--sg-color-spece);
+}
+#personal_intro > .box ul {
+    margin-top: 0.5rem;
+}
+#personal_intro > .box ul li {
+    display: flex;
+    align-items: initial;
+}
+#personal_intro > .box ul li .icon {
+    font-size: 1rem;
+    margin-top: -0.3rem;
+    color: var(--sg-color-spece);
+}
+#personal_intro > .box ul li p {
+    font-size: 0.9rem;
+}
+#personal_card > .box ul {
+    margin-top: 0.5rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    align-items: initial;
+    scroll-snap-type: x mandatory;
+}
+#personal_card > .box ul::-webkit-scrollbar {
+    display: none;
+}
+#personal_card > .box ul li {
+    max-width: 180px;
+    min-width: 180px;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    background: var(--sg-bgblack);
+    overflow: hidden;
+    max-height: 250px;
+    height: 250px;
+    scroll-snap-align: center;
+}
+#personal_card > .box ul li:first-child{
+    margin-left: 0rem;
+}
+#personal_card > .box ul li form {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    z-index: 1000;
+}
+#personal_card > .box ul li .icon-add {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    color: var(--sg-color-spece);
+}
+#personal_card > .box ul li .icon-add i {
+    opacity: 0.4;
+}
+#personal_card > .box ul li form .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: var(--sg-bgblack);
+    background: var(--sg-color-def);
+}
+#personal_card > .box ul li form i {
+    font-size: 0.9rem;
+    margin-top: 0.1rem;
+}
+#personal_card > .box ul li .img {
+    overflow: hidden;
+    min-height: max-content;
+    height: 100%;
+    position: relative;
+    max-height: 100%;
+}
+#personal_card > .box ul li blockquote {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    font-size: 1rem;
+    left: 0;
+    right: 0;
+}
+#personal_card > .box ul li .img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 2;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: all ease-in-out 0.3s;
+}
+#personal_card > .box ul li:hover .img::before {
+    opacity: 0.5;
+}
+#personal_card > .box ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#personal_card > .box ul li p {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    font-weight: 600;
+}
+#personal_photo > .box {
+    margin-top: 0.5rem;
+}
+#personal_photo > .box > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.5rem;
+    margin: 0.5rem auto;
+    margin-right: 0.5rem;
+}
+#personal_photo > .box ul li {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    background: var(--sg-bgblack);
+}
+#personal_photo > .box ul > .icon-add-photo {
+    position: relative;
+    cursor: pointer;
+}
+#personal_photo > .box ul > .icon-add-photo .icon-ra {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    opacity: 0.4;
+    color: var(--sg-color-spece);
+}
+#personal_photo ul li .img {
+    overflow: hidden;
+    border-radius: 8px;
+    height: 100%;
+    position: relative;
+}
+/* #personal_photo ul li .img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 100rem;
+    background: black;
+    opacity: 0;
+    scale: 0.1;
+    transition: all ease-in-out 0.3s;
+} */
+#personal_photo ul li .img::selection,
+#personal_photo ul li .img:active::before::selection,
+#personal_photo ul li .img::before::selection {
+    background: transparent;
+    color: white;
+}
+#personal_photo ul li .img:active::before,
+#personal_photo ul li .img:hover::before {
+    opacity: 0.4;
+    scale: 2.5;
+    cursor: pointer;
+}
+#personal_photo ul li .img img {
+    width: 100%;
+}
+#personal_photo > .box > ul .user-profile-sm {
+    position: sticky;
+    top: -1px;
+    display: none;
+    height: 46px;
+    background: var(--sg-bglight);
+    z-index: 100;
+}
+#personal_photo > .box > ul .user-data .profile {
+    width: 1.8rem;
+    height: 1.8rem;
+    background: var(--sg-mainColor-yellow);
+}
+#personal_photo > .box > ul .user-profile-sm .text h2 {
+    font-size: 0.9rem;
+}
+#personal_photo > .box > ul .user-profile-sm > .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    background: transparent;
+    cursor: pointer;
+}
+#personal_photo > .box > ul .user-profile-sm > .icon:hover {
+    background: var(--sg-bgblack);
+}
+#personal_photo > .box ul li blockquote {
+    padding: 0.3rem;
+}
+#personal_photo > .box ul li .box {
+    min-height: 100%;
+    height: 100%;
+}
+#personal_photo > .box ul li .box > .text {
+    display: none;
+}
+#personal_photo > .box ul li blockquote p {
+    font-size: 1rem;
+    font-weight: 550;
+}
+/* #personal_photo > .box ul li blockquote .p-over {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+} */
+
+#personal_photo > .box ul li .box > .text .item-date {
+    width: max-content;
+    margin-left: 0.3rem;
+    margin-bottom: 0.3rem;
+    background: var(--sg-border-mainApp);
+}
+#personal_photo > .box ul li .box > .text span {
+    font-size: 0.7rem;
+    font-weight: 550;
+}
+#personal_photo > .box ul li .box > .text .item-date i {
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+}
+#personal_photo > .box ul li .box > .row {
+    position: sticky;
+    bottom: 50px;
+    display: none;
+    height: 50px;
+    margin: 0.3rem;
+    border-radius: 10px;
+    border: 1px solid var(--sg-border-00);
+    background: var(--sg-bglight);
+    z-index: 100;
+}
+#personal_photo > .box ul li .box > .row > .text {
+    margin: auto 0.3rem;
+}
+#personal_photo > .box ul li .box > .row > .text h2 {
+    font-size: 1rem;
+    line-height: 1.1;
+}
+#personal_photo > .box ul li .box > .row button {
+    margin-right: 0.3rem;
+}
+#personal_photo > .box ul li .box > .row button .icon {
+    box-sizing: border-box;
+    border: 1px solid var(--sg-border-00);
+    border-radius: 8px;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+#personal_photo > .box ul li .box > .row button .icon i {
+    font-size: 0.9rem;
+    color: var(--sg-color-def);
+    opacity: 0.7;
+}
+#personal_photo > .box ul li .box > .row button .icon:hover i {
+    opacity: 0.8;
+}
+#personal_photo > .box ul li .box > .row button .text-be:hover::before {
+    color: var(--sg-color-text);
+    background: var(--sg-bglight);
+    z-index: 110;
+}
+#personal_photo > .box ul li .box > .row button p {
+    font-size: 0.7rem;
+    font-weight: 550;
+}
+#personal_photo > .box ul li .box > .btn-close {
+    position: sticky;
+    bottom: -1px;
+    display: none;
+    height: 50px;
+    background: var(--sg-bglight);
+    z-index: 100;
+}
+#personal_photo > .box ul li .box > .btn-close button {
+    width: 100%;
+    margin: 0 0.3rem;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: var(--sg-bglight);
+    cursor: pointer;
+    background: linear-gradient(147deg, #ffe53b 0%, #d3145b 74%);
+}
+
+#personal_photo > .box ul .item-active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 0.3s;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#personal_photo > .box ul .item-active > .box {
+    width: 95%;
+}
+#personal_photo > .box ul li .bg-item,
+#personal_photo > .box ul .item-active .bg-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--sg-color-text);
+    opacity: 0;
+    z-index: 0;
+}
+#personal_photo > .box ul li:hover .bg-item {
+    opacity: 0.4;
+}
+#personal_photo > .box ul .item-active .bg-item {
+    opacity: 0.4;
+}
+#personal_photo > .box ul .item-active > .box {
+    position: relative;
+    z-index: 10;
+    max-width: 500px;
+    background: var(--sg-bglight);
+    overflow: hidden;
+    height: max-content;
+    min-height: max-content;
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 97vh;
+}
+#personal_photo > .box ul .item-active > .box::-webkit-scrollbar {
+    display: none;
+}
+#personal_photo > .box ul .item-active > .box .user-profile-sm {
+    display: flex;
+    position: sticky;
+    top: -2px;
+    margin-top: -1px;
+}
+#personal_photo > .box ul .item-active > .box .img {
+    max-height: max-content;
+    border-radius: 0px;
+}
+#personal_photo > .box ul .item-active > .box .img img {
+    scale: 1;
+}
+#personal_photo > .box ul .item-active:hover > .box .img img {
+    opacity: 1;
+}
+#personal_photo > .box ul .item-active .img::before {
+    display: none;
+}
+#personal_photo ul .item-active .img img {
+    width: 100%;
+    height: auto;
+}
+#personal_photo > .box ul .item-active > .box > .text {
+    display: block;
+}
+#personal_photo > .box ul .item-active > .box > .row {
+    display: flex;
+}
+#personal_photo > .box ul .item-active > .box > .btn-close {
+    display: flex;
+}
+@media only screen and (max-width: 999px) {
+    .web-section-body > .head {
+        top: 50px;
+    }
+}
+@media only screen and (max-width: 978px) {
+    .monk > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0.5rem;
+    }
+}
+@media only screen and (max-width: 958px) {
+    .monk > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 0.5rem;
+    }
+}
+@media only screen and (max-width: 943px) {
+    .monk > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0.5rem;
+    }
+}
+@media only screen and (max-width: 848px) {
+    .monk > .box > ul li > .box > .head .row .icon:first-child {
+        display: none;
+    }
+    .monk > .box > ul li > .box > .head .row .icon {
+        opacity: 1;
+        font-size: 0.7rem;
+    }
+    .monk > .box > ul li > .box > .head .row {
+        justify-content: right;
+    }
+}
+@media only screen and (max-width: 839px) {
+    .monk > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+}
+@media only screen and (max-width: 761px) {
+    .web-section-body > .head {
+        top: 0px;
+    }
+    /* .infor-section .head {
+        background: var(--sg-bgblack);
+    } */
+}
+@media only screen and (max-width: 760px) {
+    .theory > .con-head-i button {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 1rem;
+    }
+    .theory > .bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 7rem;
+        height: 1.5rem;
+        line-height: 1;
+    }
+    .theory > .bg p {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .web-section .head .icon {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .web-section .head .box .text h2 {
+        font-size: 0.9rem;
+    }
+    .web-section .head > .box > .row-one {
+        min-width: max-content;
+    }
+    .web-section .head > .box > .row-tow {
+        display: none;
+    }
+    /* .monk > .box > ul li .user-in {
+        display: none;
+    } */
+}
+@media only screen and (max-width: 541px) {
+    .monk > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.3rem;
+    }
+}

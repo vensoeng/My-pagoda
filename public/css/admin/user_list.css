@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moulpali&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: "Battambang", system-ui;
+}
+.user_list {
+    position: fixed;
+    width: 100%;
+    max-width: 350px;
+    bottom: 0.5rem;
+    right: 1.5rem;
+    display: block;
+    border-right: 1px solid var(--sg-border-00);
+    background: var(--sg-bglight);
+    z-index: 9999;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0.6rem;
+}
+.user_list-active {
+    padding-bottom: 1rem;
+}
+.user_list-head .box {
+    margin: 0.3rem 0.5rem;
+}
+.user_list-head .box h2 {
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.user_list-head .box .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: var(--sg-color-def);
+    color: var(--sg-bglight);
+}
+.user_list .user_list-head .box .icon i::before {
+    content: "\2b";
+}
+.user_list-active .user_list-head .box .icon {
+    background: var(--sg-mainColor-yellow);
+}
+.user_list-active .user_list-head .box .icon i::before {
+    content: "\f068";
+}
+.user_list_content {
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
+    height: 0px;
+}
+.user_list-active .user_list_content {
+    max-height: 45vh;
+    height: max-content;
+    overflow-y: scroll;
+}
+.user_list_content::-webkit-scrollbar {
+    display: none;
+}
+.user_list table {
+    width: 100%;
+    min-width: max-content;
+    border-collapse: collapse;
+}
+.user_list tr:first-child {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    z-index: 100;
+    background: var(--sg-bglight);
+}
+.user_list tr:not(.user_list tr:first-child) {
+    height: 60px;
+}
+.user_list tr:not(.user_list tr:first-child):hover {
+    background: var(--sg-color-light-spec);
+}
+.user_list th:first-child {
+    text-align: left;
+    text-indent: 0.5rem;
+}
+
+.user_list table td h2 {
+    max-width: 122px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.user_list table td p {
+    font-size: 0.7rem;
+}
+
+.user_list table td:first-child {
+    text-align: left;
+}
+.user_list table td .box {
+    cursor: pointer;
+    width: 100%;
+}
+.user_list table td .box i {
+    color: var(--sg-color-def);
+    opacity: 0.9;
+    font-size: 1rem;
+}
+.user_list table td a:hover i {
+    opacity: 0.7;
+    cursor: pointer;
+    color: var(--sg-mainColor-yellow);
+}
+.user_list table td form:hover i {
+    opacity: 0.7;
+    cursor: pointer;
+    color: var(--sg-maincolor-orangdark);
+}
+.user_list table td .box i {
+    text-align: center;
+}

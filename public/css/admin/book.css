@@ -1,0 +1,267 @@
+/* ===================this is nav==============================> */
+.web-nav ul li {
+    width: 50%;
+}
+#art-books .web-section-body {
+    position: relative;
+    margin: 0 0.5rem;
+    border-radius: 3px;
+    background: var(--sg-bglight);
+}
+#art-books table {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    border-collapse: collapse;
+    text-align: left;
+}
+#art-books table tr:first-child {
+    position: sticky;
+    top: 60px;
+    z-index: 100;
+    background: var(--sg-bglight);
+}
+#art-books table tr {
+    border-bottom: 1px solid var(--sg-bgblack);
+}
+#art-books table tr th:first-child {
+    text-align: left;
+    text-indent: 10px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+#art-books table tr th,
+#art-books table tr td {
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+}
+#art-books table tr th {
+    padding: 0.8rem 0.7rem;
+}
+#art-books table tr td .img {
+    width: 110px;
+    height: 70px;
+    min-width: 110px;
+    min-height: 70px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 0.5rem;
+}
+#art-books table tr td:first-child .img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+#art-books table tr td .text {
+    line-height: 1.3;
+    margin-left: 0.5rem;
+    max-width: 300px;
+}
+#art-books table tr td .text p {
+    text-align: left;
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+#art-books table tr td .text h2 {
+    font-size: 0.9rem;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--sg-color-spece);
+}
+#art-books table tr td .text h2 i {
+    font-size: 0.77rem;
+    margin: 0 0.2rem;
+    padding-top: 0.2rem;
+}
+#art-books table td .btn {
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    padding: 0rem;
+    width: 84px;
+    height: 35px;
+    min-width: 84px;
+    min-height: 35px;
+    line-height: 0;
+    background: var(--sg-border-input);
+}
+#art-books table td .btn-delete {
+    font-weight: 550;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: relative;
+    color: var(--sg-color-spece);
+    overflow: hidden;
+}
+#art-books table td .btn-delete span {
+    position: relative;
+    z-index: 1;
+}
+#art-books table td .btn-delete:active,
+#art-books table td .btn-delete:active span::selection {
+    color: var(--sg-bglight);
+    background: var(--sg-maincolor-orangdark);
+}
+#art-books table td .btn-delete span::selection {
+    color: var(--sg-color-spece);
+    background: var(--sg-border-input);
+}
+#art-books table td .btn-status {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    background: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.05rem;
+    position: relative;
+    border: 1px solid var(--sg-border-input);
+}
+#art-books table td .btn-status ul {
+    position: absolute;
+    top: 5.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 11;
+    overflow: hidden;
+    border-radius: 10px;
+    min-width: max-content;
+    min-height: max-content;
+    padding: 5px 10px;
+    color: var(--sg-color-text);
+    background: var(--sg-bglight);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) -4px -5px 16px -8px;
+}
+#art-books table td .btn-status ul li {
+    padding: 0rem 0.3rem;
+    color: var(--sg-bglight);
+    margin: 0.3rem auto;
+}
+#art-books table td .btn-status:focus ul {
+    transform: translate(-50%, -50%) scale(1);
+}
+#art-books table td .btn-status ul li:first-child {
+    background: var(--sg-mainColor-yellow);
+}
+#art-books table td .btn-status ul li:last-child {
+    background: var(--sg-maincolor-orangdark);
+}
+#art-books table tr td:last-child {
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: var(--sg-mainColor-yellow);
+}
+#art-books table tr td:last-child a {
+    color: var(--sg-mainColor-yellow);
+}
+#art-books table tr td:last-child:hover {
+    background: var(--sg-bgblack);
+}
+#art-books table tr td:last-child:active,
+#art-books table tr td:last-child:active span::selection {
+    color: var(--sg-color-spece);
+}
+#art-books table tr td:last-child:active span::selection {
+    background: var(--sg-bgblack);
+}
+#art-books table tr td:last-child span::selection {
+    color: var(--sg-mainColor-yellow);
+    background: var(--sg-bgblack);
+}
+#art-books table tr td:last-child i {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+}
+#art-books table tr td:last-child span::before,
+.tb-foot > .box > ul li::before,
+.tb-foot > .box > button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all ease-in-out 0.2s;
+    opacity: 0.1;
+    border-radius: 50rem;
+}
+#art-books table tr td:last-child:active span::before,
+.tb-foot > .box > ul li:active::before,
+.tb-foot > .box > button:active::before {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+/* this is table footer======================================> */
+.tb-foot {
+    position: sticky;
+    z-index: 10;
+    height: 55.9px;
+    bottom: 0;
+    background: var(--sg-bglight);
+    border-bottom: 1px solid var(--sg-bgblack);
+}
+.tb-foot > .box > button {
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+    position: relative;
+}
+.tb-foot > .box > button:hover {
+    color: var(--sg-button-blueHover);
+}
+.tb-foot > .box > ul li {
+    min-width: max-content;
+    padding: 0rem;
+    line-height: 0;
+    height: 2.1rem;
+    width: 2.1rem;
+    margin: 0rem 0.2rem;
+    font-size: 0.9rem;
+    font-weight: 550;
+    cursor: pointer;
+    position: relative;
+    background: var(--sg-bgblack);
+    overflow: hidden;
+}
+.tb-foot > .box > ul li > span::selection {
+    background: var(--sg-bgblack);
+}
+.tb-foot > .box > ul > .active {
+    color: var(--sg-button-blueHover);
+}
+
+@media only screen and (max-width: 1000px) {
+    .web-section-body {
+        overflow: scroll;
+        max-width: 100%;
+        max-height: 100vh;
+    }
+    #art-books table {
+        min-width: max-content;
+    }
+    #art-books table tr:first-child {
+        top: 0;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .web-nav ul li {
+        width: 95%;
+        min-width: 92%;
+    }
+}

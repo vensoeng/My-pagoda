@@ -1,0 +1,636 @@
+/* main======================================> */
+.web-section-body {
+    max-width: 1000px;
+}
+.web-section-body > .head {
+    position: sticky;
+    top: 60px;
+    z-index: 100;
+    padding: 0.5rem 0rem;
+    background: var(--sg-bglight);
+}
+.foot {
+    box-shadow: none;
+    margin: 1rem auto;
+}
+.foot > .box::before {
+    height: 1px;
+}
+.foot > .box > .btn {
+    outline: 1px solid var(--sg-border-00);
+}
+/* ------------------this is fix--------------------------------> */
+.new-sugg,
+.new-books,
+.sug-day,
+.art-books,
+.short-v {
+    padding: 0px 10px;
+}
+/* ==========================this new suggession================> */
+.new-sugg > .box > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.4rem;
+}
+.new-sugg > .box > ul > li {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.new-sugg > .box > ul > li > .head {
+    position: relative;
+}
+.new-sugg > .box > ul > li > .head::before,
+.new-books > .box > ul > li > .box > .head::before,
+.art-books > .box > ul > li > .box .head::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: 0;
+    z-index: 5;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+.new-sugg > .box > ul > li > .head:hover::before {
+    opacity: 0.4;
+}
+.new-sugg > .box > ul > li > .head > .row {
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 40px;
+}
+.new-sugg > .box > ul > li > .head > .row .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: var(--sg-bglight);
+    background: none;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+.new-sugg > .box > ul > li > .head:hover .row .icon {
+    opacity: 1;
+}
+.new-sugg > .box > ul > li > .head > .row .icon:hover {
+    background: rgb(0 0 0 / 11%);
+}
+.new-sugg > .box > ul > li > .head > .box {
+    max-height: 184.75px;
+    min-height: 184.75px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.new-sugg > .box > ul > li > .head .box img {
+    width: 100%;
+    max-height: 184.75px;
+    min-height: 184.75px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+}
+.new-sugg > .box > ul > li:hover > .head .box img {
+    scale: 1.05;
+}
+.new-sugg > .box > ul .user-in .box {
+    display: flex;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+.new-sugg > .box > ul .user-in .profile {
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    background: none;
+    margin-left: 0rem;
+}
+.new-sugg > .box > ul .user-in h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.new-sugg > .box > ul .user-in blockquote > a {
+    font-size: 1rem;
+    margin: 0.3rem 0rem;
+    color: var(--sg-color-spece);
+}
+.new-sugg > .box > ul .user-in blockquote > a i {
+    font-size: 0.77rem;
+    margin: 0 0.2rem;
+    padding-top: 0.2rem;
+}
+.new-sugg > .box > ul .user-in > .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+.new-sugg > .box > ul .user-in > .text p {
+    color: var(--sg-color-spece);
+}
+/* =======================this is books sugg=========================> */
+.new-books > .box > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.4rem;
+}
+.new-books > .box > ul > li {
+    overflow: hidden;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.new-books > .box > ul > li > .box > .head {
+    overflow: hidden;
+    max-height: 300px;
+    position: relative;
+}
+.new-books > .box > ul > li:hover > .box > .head::before {
+    opacity: 0.1;
+}
+.new-books > .box > ul > li > .box > .head img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+}
+.new-books > .box > ul > li:hover .head img {
+    scale: 1.05;
+}
+.new-books > .box > ul > li blockquote h2 {
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #db9160;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.new-books > .box > ul > li blockquote p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.new-books > .box > ul > li blockquote p strong,
+.new-books > .box > ul > li blockquote p strong a {
+    font-weight: 500;
+    color: var(--sg-color-spece);
+}
+.new-books > .box > ul > li .subtitle strong {
+    font-size: 1rem;
+    font-weight: 550;
+}
+.new-books > .box > ul > li .subtitle strong span {
+    color: var(--sg-color-text);
+}
+/* ==============================this suggestion day =====================> */
+.sug-day {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1rem 0rem;
+}
+.sug-day .con-head-i {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+.sug-day .con-head-i button {
+    font-size: 1.2rem;
+    background: var(--sg-color-spece);
+}
+.sug-day > .box {
+    max-height: 250px;
+    padding: 0rem 1rem;
+}
+.sug-day > .box > .row-one {
+    min-width: max-content;
+}
+.sug-day > .box > .row-one .buote {
+    margin-top: 0.8rem;
+}
+.sug-day > .box > .row-one li blockquote h2 {
+    font-size: 2rem;
+}
+.sug-day > .box > .row-one li blockquote h3 {
+    font-size: 1.5rem;
+    opacity: 0.95;
+}
+.sug-day > .box > .row-tow {
+    margin-left: 20%;
+    height: 400px;
+}
+.sug-day > .box > .row-tow .box {
+    max-height: 100%;
+    height: 100%;
+}
+.sug-day > .box > .row-tow .box img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+.sug-day > .box > .bg {
+    rotate: 318deg;
+    color: var(--sg-bglight);
+    width: max-content;
+    bottom: 2rem;
+    left: auto;
+    right: -2.3rem;
+    padding: 0rem 2.5rem;
+    background: var(--sg-main-gradienColorHover);
+}
+.sug-day > .box > .row-one .button .btn {
+    width: max-content;
+    font-weight: 550;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    color: var(--sg-color-text);
+    outline-color: var(--sg-color-text);
+}
+/* ==========================this is art-books section ====================> */
+.art-books > .box > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem 0.4rem;
+}
+.art-books > .box > ul > li .text > a strong {
+    font-size: 1rem;
+    opacity: 0.6;
+    font-family: var(--sg-fontBat);
+}
+.art-books > .box > ul > li > .box .head {
+    max-height: 184.75px;
+    min-height: 184.75px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.art-books > .box > ul > li > .box .head img {
+    max-height: 184.75px;
+    min-height: 184.75px;
+    object-fit: cover;
+}
+.art-books > .box > ul > li > .box .head .row {
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 40px;
+}
+.art-books > .box > ul > li:hover > .box .head::before {
+    opacity: 0.3;
+}
+.art-books > .box > ul > li > .box .head .row .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: var(--sg-bglight);
+    background: none;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+.art-books > .box > ul > li > .box .head .row .icon:hover {
+    background: rgb(0 0 0 / 11%);
+}
+.art-books > .box > ul > li:hover > .box .head .row .icon {
+    opacity: 1;
+}
+.art-books > .box > ul > li .text {
+    padding: 0.5rem;
+}
+.art-books > .box > ul > li .text blockquote h2 {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #db9160;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-family: var(--sg-fontBat);
+}
+.art-books > .box > ul > li .text blockquote p {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-family: var(--sg-fontBat);
+}
+/* =====================this is show about short video header ===================> */
+.short-v ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.4rem;
+}
+.short-v ul li {
+    width: 100%;
+    min-height: 280px;
+    position: relative;
+    overflow-y: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid var(--sg-border-00);
+    background: red;
+}
+.short-v ul li > .head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+}
+.short-v ul li > .head .profile {
+    margin-left: 0.1rem;
+    scale: 0.75;
+    width: 2.8rem;
+    height: 2.8rem;
+    background: linear-gradient(
+        36deg,
+        rgb(255, 201, 0) 13%,
+        rgb(255, 0, 95) 73%,
+        rgb(255, 9, 237) 100%
+    );
+}
+.short-v ul li > .head .profile .icon {
+    margin: 0 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+    border: 2px solid var(--sg-bglight);
+}
+.short-v ul li > .head > .btn {
+    padding: 0rem;
+    width: 2rem;
+    border-radius: 3px;
+    height: 1.5rem;
+    background: var(--sg-main-gradienColorHover);
+}
+.short-v ul li > .head > .btn p {
+    font-size: 0.7rem;
+    font-family: "Inter", sans-serif;
+}
+.short-v ul li .tum-v {
+    height: 100%;
+}
+.short-v ul li .tum-v .video {
+    max-width: 240.2;
+    overflow: hidden;
+    max-height: 301;
+    height: 100%;
+}
+.short-v ul li:hover .tum-v .video img {
+    scale: 1.08;
+}
+.short-v ul li .tum-v img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    transition: all ease-in-out 0.4s;
+}
+.short-v ul li > .subtitle {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+.short-v ul li > .subtitle > .btn {
+    position: absolute;
+    padding: 0rem;
+    width: 2.8rem;
+    height: 1.8rem;
+    background: var(--sg-mainColor-yellow);
+    right: 0rem;
+}
+.short-v ul li > .subtitle {
+    background: linear-gradient(0deg, black, transparent);
+}
+/* .short-v ul li > .subtitle > .text {
+    margin-left: 0.5rem;
+} */
+.short-v ul li > .subtitle > .text h2 {
+    color: var(--sg-bglight);
+    font-size: 0.8rem;
+}
+.short-v ul li > .subtitle > .btn p {
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: var(--sg-color-text);
+    font-family: var(--sg-fontNotoKH);
+}
+.short-v ul li > .bg {
+    color: var(--sg-bglight);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background: rgb(0 0 0 / 35%);
+    opacity: 0;
+}
+.short-v ul li > .bg .icon {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    opacity: 0.9;
+    z-index: 3;
+}
+.short-v ul li:hover > .bg {
+    opacity: 1;
+}
+@media only screen and (max-width: 999px) {
+    .web-section-body > .head {
+        top: 50px;
+    }
+    .web-section-body > .head > .box {
+        margin: 0 0.5rem;
+    }
+    .new-sugg,
+    .new-books,
+    .sug-day,
+    .art-books,
+    .short-v {
+        padding: 0px;
+        margin: 0 0.5rem;
+    }
+}
+@media only screen and (max-width: 761px) {
+    .web-section-body > .head {
+        top: 0px;
+    }
+}
+@media only screen and (max-width: 758px) {
+    .sug-day {
+        background: var(--sg-bgblack-01);
+    }
+    .sug-day .con-head-i button {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+    }
+    .sug-day > .box > .bg {
+        padding: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 11rem;
+        height: 1.5rem;
+        line-height: 1;
+    }
+    .sug-day > .box > .bg p {
+        font-size: 0.7rem;
+        line-height: 0;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .new-sugg > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+@media only screen and (max-width: 586px) {
+    .sug-day > .box > .row-one li blockquote h2 {
+        font-size: 1.1rem;
+    }
+    .sug-day > .box {
+        max-height: 200px;
+    }
+    .sug-day > .box > .row-one li blockquote h3 {
+        font-size: 1rem;
+    }
+    .sug-day > .box > .row-one .button .btn {
+        font-size: 0.9rem;
+        padding: 0.1rem 0.5rem;
+    }
+    .art-books > .box > ul > li .text blockquote h2 {
+        font-size: 1rem;
+    }
+    .art-books > .box > ul > li .text blockquote p {
+        -webkit-line-clamp: 2;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .web-section .head .box .row-tow a {
+        padding: 0.9rem 0.5rem 0.8rem;
+        font-size: 0.8rem;
+        line-height: 0;
+    }
+    .web-section .head > .box .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    .web-section .head .box .text h2 {
+        font-size: 0.8rem;
+    }
+    .new-sugg > .box {
+        overflow: hidden;
+        overflow-x: scroll;
+        border-radius: 5px;
+    }
+    .new-sugg > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .new-sugg > .box ul {
+        min-width: 800px;
+    }
+    .new-sugg > .box > ul > li > .head > .box {
+        min-height: 140px;
+        max-height: 140px;
+    }
+    .new-sugg > .box > ul .user-in h2 {
+        font-size: 0.9rem;
+    }
+    .new-sugg > .box > ul .user-in blockquote > a span {
+        font-size: 0.8rem;
+    }
+    .new-sugg > .box > ul .user-in > .text {
+        display: none;
+    }
+    .foot > .box > .btn {
+        font-size: 0.8rem;
+    }
+    .new-books > .box > ul > li blockquote h2 {
+        font-size: 1rem;
+    }
+    .new-books > .box > ul > li blockquote p,
+    .new-books > .box > ul > li .subtitle strong {
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 522px) {
+    .art-books > .box {
+        overflow: hidden;
+        overflow-x: scroll;
+        border-radius: 5px;
+    }
+    .art-books > .box ul {
+        min-width: 800px;
+    }
+    .art-books > .box > ul > li > .box .head {
+        min-height: 150px;
+        max-height: 150px;
+    }
+    .art-books > .box > ul > li .text > a strong {
+        font-size: 0.8rem;
+    }
+    .art-books > .box > ul > li .text blockquote h2 {
+        font-size: 0.9rem;
+    }
+    .art-books > .box > ul > li .text blockquote p {
+        display: none;
+    }
+}
+@media only screen and (max-width: 426px) {
+    .new-books > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .sug-day > .box > .row-one {
+        width: 90%;
+        min-width: 90%;
+    }
+    .short-v ul {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.2rem;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .new-books > .box {
+        overflow: hidden;
+        overflow-x: scroll;
+        border-radius: 3px;
+    }
+    .new-books > .box ul {
+        min-width: 850px;
+    }
+}
+@media only screen and (max-width: 319px) {
+    .short-v ul {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.2rem;
+    }
+}

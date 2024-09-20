@@ -1,0 +1,181 @@
+/* .web-header {
+  backdrop-filter: blur(15px);
+  background: #ffffff80;
+} */
+main {
+    margin: 0 0.5rem;
+}
+main > .con {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.monk-infor {
+    width: 100%;
+    overflow: initial;
+    position: initial;
+    height: auto;
+    max-height: max-content;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    opacity: 1;
+    border-radius: 0px;
+    max-width: initial;
+}
+.monk-infor-body {
+    height: max-content;
+    overflow: initial;
+    max-height: max-content;
+}
+.monk-infor-body .user-profile {
+    margin-top: -4.2rem;
+}
+.monk-infor-body .user-cover {
+    width: 100%;
+}
+.monk-infor-body .user-cover .box {
+    max-height: 500px;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
+.monk-infor-body .user-cover .btn-edite-profile {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+}
+.monk-infor-body .user-cover .btn-edite-profile a {
+    background: var(--sg-bglight);
+    border-radius: 7px;
+    line-height: 0;
+    font-weight: 600;
+    padding: 0.5rem 0.6rem;
+    color: var(--sg-mainColor-yellow);
+    font-size: 0.9rem;
+}
+.monk-infor-body .user-cover .btn-edite-profile a i {
+    margin: 0rem 0.2rem;
+}
+#personal_photo > .box > ul {
+    display: block;
+    margin: 0 auto;
+    column-gap: 0.5rem;
+    column-count: 4;
+    max-width: 100%;
+    grid-template-columns: initial;
+}
+#personal_photo > .box > ul li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    background: transparent;
+    break-inside: avoid;
+}
+#personal_photo > .box > ul .user-profile-sm {
+    display: flex;
+    z-index: 1000;
+    position: initial;
+}
+#personal_photo > .box > ul .user-profile-sm .text h2 span {
+    font-size: 0.6rem;
+}
+#personal_photo > .box ul li blockquote p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+#personal_photo ul li .img {
+    min-height: max-content;
+    border-radius: 0px;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
+#personal_photo ul li .img img {
+    width: 100%;
+    height: 100%;
+    scale: 1.1;
+    object-fit: cover;
+}
+#personal_photo ul li:hover .img {
+    background: black;
+}
+#personal_photo ul .item-active:hover .img{
+    background: transparent;
+}
+#personal_photo ul li:hover .img img {
+    opacity: 0.5;
+}
+#personal_photo > .box ul li .bg-item:hover {
+    background: none;
+    opacity: 0;
+}
+#personal_photo > .box ul .item-active .bg-item:hover {
+    background: black;
+    opacity: 0.4;
+}
+#personal_photo > .box ul li .box > .text {
+    display: block;
+}
+@media only screen and (max-width: 747px) {
+    #personal_photo > .box > ul {
+        column-count: 2;
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+    #personal_photo > .box > ul .user-profile-sm {
+        height: 35px;
+    }
+    #personal_photo > .box > ul .user-data .profile {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin: 0.3rem;
+    }
+    #personal_photo > .box > ul .user-profile-sm .text h2 {
+        font-size: 0.6rem;
+    }
+    #personal_photo > .box > ul .user-profile-sm > .icon {
+        font-size: 0.6rem;
+    }
+    #personal_photo > .box ul li blockquote p {
+        font-size: 0.8rem;
+        -webkit-line-clamp: 2;
+    }
+    #personal_photo > .box ul li .box > .text .item-date {
+        background: none;
+        padding: 0rem;
+    }
+    #personal_photo > .box ul li .box > .text .item-date i {
+        font-size: 0.6rem;
+    }
+}
+@media only screen and (max-width: 515px) {
+    .monk-infor-body .user-cover .box {
+        max-height: 193.79px;
+        height: 200px;
+    }
+    .con .con-head .swiper-slide {
+        max-height: 500px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 355px) {
+    #personal_photo > .box > ul {
+        column-gap: 0.3rem;
+    }
+    #personal_photo > .box > ul li {
+        margin-bottom: 0.3rem;
+    }
+    #personal_photo > .box > ul .user-profile-sm {
+        display: none;
+    }
+    #personal_photo > .box ul li .box > .text {
+        display: none;
+    }
+}

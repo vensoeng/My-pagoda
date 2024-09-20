@@ -1,0 +1,309 @@
+/* ==========this is main ====================> */
+.web-main .web-main-body {
+    align-items: initial;
+}
+/* =============this is foot======================> */
+.foot {
+    margin: 1rem auto;
+    position: relative;
+}
+.foot > .box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--sg-border-00);
+    z-index: 0;
+}
+.foot > .box > .btn {
+    position: relative;
+    z-index: 1;
+    font-weight: 550;
+    position: relative;
+    z-index: 2;
+    color: var(--sg-mainColor-yellow);
+    background: var(--sg-bglight);
+    outline: 1px solid var(--sg-border-00);
+}
+/* ========================this is menu=====================> */
+.web-content {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    /* background: blue; */
+    background: var(--sg-bgblack);
+}
+.web-nav > .head > .box {
+    height: 60px;
+}
+.web-nav > .head > .box .icon {
+    color: var(--sg-mainColor-yellow);
+}
+.web-nav > .head > .box h2 {
+    font-size: 1.05rem;
+}
+.web-nav ul {
+    display: flex;
+    justify-content: left;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.web-nav ul li {
+    min-width: 250px;
+    border-radius: 3px;
+    background: var(--sg-bglight);
+    margin: 0rem 0.3rem;
+    margin-bottom: 0.6rem;
+    box-sizing: border-box;
+}
+.web-nav ul li:first-child {
+    margin-left: 0.4rem;
+}
+.web-nav ul li:last-child {
+    margin-right: 0.4rem;
+}
+.web-nav ul li > .box {
+    padding: 0.8rem 1rem;
+}
+.web-nav ul li > .box > .row > .icon {
+    width: max-content;
+    height: max-content;
+    margin-right: 0.5rem;
+    margin-left: 0rem;
+    /* background: blue; */
+}
+.web-nav ul li > .box > .row > .icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    color: var(--sg-mainColor-yellow);
+}
+.web-nav ul li > .box > .row p {
+    font-size: 1rem;
+    font-weight: 550;
+}
+.web-nav ul li .text {
+    margin: 1rem 0rem;
+}
+.web-nav ul li .text h2 {
+    font-size: 1.1rem;
+}
+
+.web-nav ul li .text .box .btn {
+    color: var(--sg-button-blue);
+    padding: 0.2rem 0rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.web-nav ul li .text .box .btn i {
+    margin-left: 0.3rem;
+}
+.web-nav ul li .text .box .btn:hover {
+    margin-left: 0.3rem;
+}
+/* =============================this is monk section=======================> */
+#monk .web-section-body > .web-nav > .box {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 3px;
+    background: var(--sg-bglight);
+}
+#monk table {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+#monk table tr:first-child {
+    position: sticky;
+    top: 60px;
+    z-index: 10;
+    background: var(--sg-bglight);
+}
+#monk table th {
+    padding: 0.8rem 0.5rem;
+    font-size: 1rem;
+}
+#monk table th,
+#monk table td {
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+}
+#monk table td .img {
+    margin: 0 auto;
+}
+#monk table td .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ==========================this is art-books section ====================> */
+.art-books > .box > ul > li {
+    min-width: 350px;
+}
+.art-books ul li > .box {
+    padding: 0.5rem;
+}
+.art-books > .box > ul > li .text > a strong {
+    font-size: 1rem;
+    opacity: 0.6;
+}
+.art-books > .box > ul > li > .box .head {
+    max-height: 184.75px;
+    min-height: 184.75px;
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+}
+.art-books > .box > ul > li > .box .head img {
+    max-height: 184.75px;
+    min-height: 184.75px;
+    object-fit: cover;
+}
+.art-books > .box > ul > li > .box .head .row {
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 40px;
+}
+.art-books > .box > ul > li:hover > .box .head::before {
+    opacity: 0.3;
+}
+.art-books > .box > ul > li > .box .head .row .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: var(--sg-bglight);
+    background: none;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+.art-books > .box > ul > li > .box .head .row .icon:hover {
+    background: rgb(0 0 0 / 11%);
+}
+.art-books > .box > ul > li:hover > .box .head .row .icon {
+    opacity: 1;
+}
+.art-books > .box > ul > li .text {
+    padding: 0.5rem;
+}
+.art-books > .box > ul > li .text blockquote h2 {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #db9160;
+}
+.art-books > .box > ul > li .text blockquote p {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+/* ========================this is  show suggession day ===================> */
+#sug-day .web-section-body {
+    max-width: 1333px;
+}
+.sug-day {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1rem 0rem;
+}
+.sug-day .con-head-i {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+.sug-day .con-head-i button {
+    font-size: 1.2rem;
+    background: var(--sg-color-spece);
+}
+.sug-day > .box {
+    max-height: 250px;
+    padding: 0rem 1rem;
+}
+.sug-day > .box > .row-one .logo .icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.2rem;
+}
+.sug-day > .box > .row-one .logo .icon i {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--sg-main-yellowlight);
+    background-image: var(--sg-main-gradientColor);
+}
+.sug-day > .box > .row-one .logo .text h2 {
+    font-size: 1.5rem;
+    color: var(--sg-mainColor-yellow);
+}
+.sug-day > .box > .row-one li blockquote h2 {
+    font-size: 2rem;
+}
+.sug-day > .box > .row-one .buote {
+    margin-top: 0.8rem;
+}
+.sug-day > .box > .row-one li blockquote h3 {
+    font-size: 1.5rem;
+    opacity: 0.95;
+}
+.sug-day > .box > .row-one .button .btn {
+    width: max-content;
+    font-weight: 550;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    color: var(--sg-color-text);
+    outline-color: var(--sg-color-text);
+}
+.sug-day > .box > .row-tow {
+    margin-left: 20%;
+    height: 400px;
+}
+.sug-day > .box > .row-tow .box {
+    max-height: 100%;
+    height: 100%;
+}
+.sug-day > .box > .row-tow .box img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+.sug-day > .box > .bg {
+    rotate: 318deg;
+    color: var(--sg-bglight);
+    width: max-content;
+    bottom: 2rem;
+    left: auto;
+    right: -2.3rem;
+    padding: 0rem 2.5rem;
+    background: var(--sg-main-gradienColorHover);
+}
+
+@media only screen and (max-width: 650px) {
+    #monk .web-section-body > .web-nav > .box {
+        overflow: scroll;
+        max-width: 100%;
+        max-height: 100vh;
+    }
+    #monk table {
+        min-width: max-content;
+    }
+    #monk table tr:first-child {
+        top: 0;
+    }
+    .web-content {
+        background: var(--sg-border-00);
+    }
+}
